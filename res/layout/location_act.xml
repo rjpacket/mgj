@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white" >
+
+    <RelativeLayout
+        android:id="@+id/location_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10" >
+
+        <TextView
+            android:id="@+id/location_act_tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel_location"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/location_act_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_toLeftOf="@id/location_act_tv_search"
+            android:layout_toRightOf="@id/location_act_iv_back"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/location_act_edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/search_loc"
+                android:paddingBottom="@dimen/x4"
+                android:paddingTop="@dimen/x4"
+                android:textColor="@color/gray_white"
+                android:textColorHint="@color/gray_white"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location_act_layout_current"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/location_act_title_bar">
+
+        <RelativeLayout
+            android:id="@+id/location_act_layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mine_left_right_padding"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/x6"
+            android:paddingLeft="@dimen/mine_left_right_padding"
+            android:paddingRight="@dimen/mine_left_right_padding"
+            android:paddingTop="@dimen/x6" >
+
+            <TextView
+                android:id="@+id/location_act_tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/x10"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/loc_current"
+                android:textColor="@color/org_light"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/location_act_progress_current"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/location_act_tv_my_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_act_layout_location"
+            android:textColor="@color/gray_1"
+            android:textSize="14sp"
+            android:padding="@dimen/x10"
+            android:text="@string/my_address"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/location_act_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/location_act_tv_my_address"
+            android:cacheColorHint="#00000000"
+            android:divider="#999999"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbVertical="@drawable/xg_scrollbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location_act_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/location_act_title_bar"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/location_act_progress_list"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/location_act_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbVertical="@drawable/xg_scrollbar"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/location_act_tv_search_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_no_result"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

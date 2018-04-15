@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/evaluate_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10">
+
+        <ImageView
+            android:id="@+id/withdraw_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/withdraw_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:text="@string/balance_withdraw"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/error_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入金额有误"
+        android:padding="@dimen/x6"
+        android:background="#FDFCE9"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x10"
+            android:paddingLeft="@dimen/x12"
+            android:paddingTop="@dimen/x10"
+            android:text="@string/useful_balance"
+            android:textColor="@color/common_black_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/withdraw_current_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/useful_balance_number"
+            android:textColor="@color/org_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x1"
+            android:text="@string/yuan"
+            android:textColor="@color/common_black_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x8"
+        >
+
+        <EditText
+            android:id="@+id/withdraw_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap_gray_range_bg"
+            android:hint="@string/input_withdraw_number"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/x10"
+        android:paddingTop="@dimen/x20"
+        android:paddingBottom="@dimen/x20"
+        android:paddingLeft="@dimen/x12"
+        android:paddingRight="@dimen/x12"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/withdraw_prompt"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"/>
+        <TextView
+            android:paddingTop="@dimen/x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/withdraw_prompt1"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_marginRight="@dimen/x12"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/withdraw_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/withdraw_confirm"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/x10"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:background="@drawable/shap_corner_red_bg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/withdraw_rule"
+        android:gravity="center"
+        android:layout_margin="@dimen/x10"/>
+</LinearLayout>

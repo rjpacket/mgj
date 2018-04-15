@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.project.mgjandroid.ui.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.project.mgjandroid.ui.view.ProgressImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_upload_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:text="上传失败\n点击重试"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_delete"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_first_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="封面"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@color/title_bar_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/x2"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/add_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_mine_stroke_grey"
+        android:src="@drawable/photo_add"
+        android:scaleType="centerInside"
+        android:visibility="gone"/>
+
+</com.project.mgjandroid.ui.view.SquareLayout>

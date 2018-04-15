@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/re_tip_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/x24"
+        android:background="@drawable/rounded_search_text">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:textSize="18sp"
+            android:textColor="@color/common_black_text"
+            />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appTitle"
+            android:layout_alignLeft="@id/appTitle"
+            android:text="AlertDialog的内容"
+            android:textSize="16sp"
+            android:textColor="@color/common_gray_text"
+            android:layout_marginTop="@dimen/x20"/>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/save"
+            android:layout_below="@id/tips"
+            android:padding="@dimen/x5"
+            android:textSize="16sp"
+            android:textColor="@color/orange_ff"
+            android:layout_marginTop="@dimen/x20" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sure"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/common_gray_text"
+            android:layout_marginRight="@dimen/x30"
+            android:padding="@dimen/x5"
+            android:layout_toLeftOf="@id/sure" />
+    </RelativeLayout>
+
+</RelativeLayout>

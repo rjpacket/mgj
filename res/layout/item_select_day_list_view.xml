@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/day_list"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/day_list_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/today"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="@dimen/x10"
+            android:paddingBottom="@dimen/x10"
+            />
+    </LinearLayout>
+</LinearLayout>

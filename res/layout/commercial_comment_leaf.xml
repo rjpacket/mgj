@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x6"
+        android:background="@color/gray_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x6" >
+
+        <TextView
+            android:id="@+id/commercial_comment_leaf_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_txt"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/commercial_comment_leaf_tv_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/x4"
+            android:drawableRight="@drawable/icon_into"
+            android:gravity="center_vertical"
+            android:textColor="@color/org_yellow"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commercial_comment_leaf_tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x6"
+        android:paddingTop="@dimen/x6"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bar_bg"
+    android:padding="@dimen/x4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_corner_white_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10" >
+
+            <ImageView
+                android:id="@+id/order_detail_order_state_img_state"
+                android:layout_width="@dimen/x46"
+                android:layout_height="@dimen/x46"
+                android:layout_centerVertical="true"
+                android:background="@drawable/confirm_order" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/order_detail_order_state_img_state"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_has_complete"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4"
+                    android:text="订单超过三小时在自动完成"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap_bottom_corner_white_gray_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/x10" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/order_has_complete_commit"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_order_state_tv_commit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/x10" >
+
+                    <ImageView
+                        android:id="@+id/order_detail_order_state_img_commit"
+                        android:layout_width="@dimen/x10"
+                        android:layout_height="@dimen/x10"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_point_gray"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_toRightOf="@id/order_detail_order_state_img_commit"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_detail_order_state_layout_mid_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/merchant_has_receive_order"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_order_state_tv_receive"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/x10" >
+
+                    <ImageView
+                        android:id="@+id/order_detail_order_state_img_receive"
+                        android:layout_width="@dimen/x10"
+                        android:layout_height="@dimen/x10"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_point_gray"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x4"
+                        android:layout_toLeftOf="@id/order_detail_order_state_img_receive"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_toRightOf="@id/order_detail_order_state_img_receive"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_detail_order_state_layout_mid_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_take_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/wait_receive_goods"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_order_state_tv_take_goods"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/x10" >
+
+                    <ImageView
+                        android:id="@+id/order_detail_order_state_img_take_goods"
+                        android:layout_width="@dimen/x10"
+                        android:layout_height="@dimen/x10"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_point_gray"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x4"
+                        android:layout_toLeftOf="@id/order_detail_order_state_img_take_goods"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_toRightOf="@id/order_detail_order_state_img_take_goods"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/order_detail_order_state_tv_arrive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/goods_has_arrive"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_order_state_tv_arrive"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/x10" >
+
+                    <ImageView
+                        android:id="@+id/order_detail_order_state_img_arrive"
+                        android:layout_width="@dimen/x10"
+                        android:layout_height="@dimen/x10"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_point_gray"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x4"
+                        android:layout_toLeftOf="@id/order_detail_order_state_img_arrive"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

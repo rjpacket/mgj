@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.project.mgjandroid.ui.view.MyCircleIndicator
+        android:id="@+id/activity_guide_indicator"
+        app:ci_width="@dimen/x10"
+        app:ci_height="@dimen/x4"
+        app:ci_margin="@dimen/x4"
+        app:ci_animator="@animator/indicator_animator"
+        app:ci_animator_reverse="@animator/indicator_animator_reverse"
+        app:ci_drawable="@drawable/black_radius_square"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"/>
+
+    <ImageView
+        android:id="@+id/activity_guide_step_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:src="@drawable/guide_button_2"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/activity_guide_tv_to_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_guide_indicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x20"
+        android:visibility="gone"
+        android:src="@drawable/guide_button_1"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>

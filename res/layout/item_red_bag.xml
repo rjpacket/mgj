@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/x12"
+    android:background="@color/white">
+
+    <com.project.mgjandroid.ui.view.CouponDisplayView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_renren"
+        android:paddingTop="@dimen/x20"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:paddingBottom="@dimen/x20"
+        android:orientation="horizontal">
+
+        <com.project.mgjandroid.ui.view.CornerImageView
+            android:id="@+id/coupon_merchant_icon"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:scaleType="centerCrop"
+            app:borderRadius="@dimen/x5"
+            app:type="round"
+            android:src="@drawable/pic_jigongbao"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10">
+
+            <TextView
+                android:id="@+id/coupon_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red_weibo"
+                android:textSize="22sp"
+                android:text="¥2.00"/>
+
+            <TextView
+                android:id="@+id/coupon_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBaseline="@id/coupon_amt"
+                android:layout_toLeftOf="@id/coupon_amt"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="重庆鸡公煲"/>
+
+            <TextView
+                android:id="@+id/create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignLeft="@id/coupon_merchant_name"
+                android:layout_below="@id/coupon_merchant_name"
+                android:layout_marginTop="@dimen/x8"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="2016.05.24"/>
+
+            <TextView
+                android:id="@+id/expiry_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/create_time"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="有效期10天"/>
+
+        </RelativeLayout>
+
+    </com.project.mgjandroid.ui.view.CouponDisplayView>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="@dimen/x36"
+    android:layout_marginRight="@dimen/x36"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/x288"
+        android:layout_height="@dimen/x150"
+        android:background="@drawable/custom_dialog"
+        android:paddingLeft="@dimen/x36"
+        android:paddingRight="@dimen/x36"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x36"
+            android:textSize="@dimen/x15"
+            android:typeface="monospace"
+            android:textColor="@color/common_black_text"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x24"
+            android:layout_alignParentBottom="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/btn_cancle"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:gravity="center"
+                    android:background="@drawable/cancle_bg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:paddingTop="@dimen/x10"
+                    android:paddingBottom="@dimen/x10"
+                    />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/btn_sure"
+                android:layout_width="@dimen/x90"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:background="@drawable/sure_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:paddingTop="@dimen/x10"
+                android:paddingBottom="@dimen/x10"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

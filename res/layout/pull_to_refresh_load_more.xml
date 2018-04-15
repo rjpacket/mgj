@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x50"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/x6"
+    android:visibility="gone" >
+
+
+
+    <LinearLayout
+        android:id="@+id/load_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x41"
+        android:background="@drawable/load_more_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x6"
+        android:paddingRight="@dimen/x6" >
+
+        <TextView
+            android:id="@+id/load_more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="加载更多"
+            android:textColor="#666666" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x41"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/load_more_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="正在加载数据..."
+            android:textColor="#666666" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

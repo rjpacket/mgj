@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white" >
+
+    <RelativeLayout
+        android:id="@+id/address_manage_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/address_manage_act_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:background="@drawable/icon_back"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/address_manage_act_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/my_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/address_manage_act_tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/choose_plate_item_selector"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_d2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/add_address"
+            android:drawableLeft="@drawable/address_manage_add"
+            android:drawablePadding="@dimen/x6"
+            android:textColor="#dc550f"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <com.project.mgjandroid.ui.view.swipemenulistview.SwipeMenuListView
+        android:id="@+id/address_manage_act_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/address_manage_act_title_bar"
+        android:layout_above="@id/address_manage_act_tv_add"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/common_gray_line"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/xg_scrollbar" />
+
+</RelativeLayout>

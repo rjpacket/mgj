@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.MoreSettingActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/confirm_order_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10" >
+
+        <ImageView
+            android:id="@+id/more_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/confirm_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:text="@string/set"
+            android:textSize="@dimen/title_bar_text_size"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x15"
+        android:background="#ededeb"
+        />
+
+    <RelativeLayout
+        android:id="@+id/setting_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_img_cache"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            />
+
+        <TextView
+            android:id="@+id/setting_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/img_cache_size"
+            android:textColor="@color/common_gray_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/setting_non_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/white"
+        android:visibility="visible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/non_wifi"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            />
+
+        <TextView
+            android:id="@+id/setting_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_state"
+            android:textColor="@color/common_gray_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/setting_auto_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_update"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            />
+
+        <TextView
+            android:id="@+id/setting_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_update_text"
+            android:textColor="@color/common_gray_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_push_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/push_notice"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            />
+
+        <TextView
+            android:id="@+id/setting_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/img_cache_size"
+            android:textColor="@color/common_gray_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/x10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_mgj"
+            android:textSize="14sp"
+            android:textColor="@color/common_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray"
+            android:layout_marginRight="@dimen/x20"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/more_setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textColor="#d66354"
+        android:textSize="16sp"
+        android:paddingTop="@dimen/x12"
+        android:paddingBottom="@dimen/x12"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:background="@color/white"
+        android:visibility="gone"
+        />
+</LinearLayout>

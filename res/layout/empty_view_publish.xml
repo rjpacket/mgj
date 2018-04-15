@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x150"
+        android:drawableTop="@drawable/no_publish_data"
+        android:drawablePadding="@dimen/x22"
+        android:textColor="@color/color_9"
+        android:textSize="14sp"
+        android:text="暂无招聘信息"/>
+
+</LinearLayout>

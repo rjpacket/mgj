@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_stroke"
+    android:textColor="@color/gray_1"
+    android:text="@string/address_manage_item_user_phone"
+    android:textSize="16sp"
+    android:padding="@dimen/x10">
+
+</TextView>

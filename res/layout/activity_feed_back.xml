@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.horsegj.merchant.activity.FeedBackActivity"
+    android:background="#f3f3f3"
+    >
+    <RelativeLayout
+        android:id="@+id/feed_back_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10" >
+
+        <ImageView
+            android:id="@+id/order_detail_act_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <ImageView
+            android:id="@+id/order_detail_act_iv_iphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/icon_phone" />
+
+        <TextView
+            android:id="@+id/feed_back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/order_detail_act_iv_iphone"
+            android:layout_toRightOf="@id/order_detail_act_iv_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x195"
+        android:paddingTop="@dimen/x10"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:layout_below="@id/feed_back_act_title_bar"
+        >
+        <EditText
+            android:id="@+id/feed_back_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/feed_back_hint"
+            android:background="@drawable/bg_mine_stroke_grey"
+            android:textSize="12sp"
+            android:textColorHint="@color/color_9"
+            android:textColor="@color/color_3"
+            android:gravity="top|left"
+            android:maxLength="500"
+            android:paddingLeft="@dimen/x10"
+            android:paddingTop="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/x24"
+            />
+
+        <TextView
+            android:id="@+id/feed_back_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/500字"
+            android:textSize="11sp"
+            android:textColor="@color/color_9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x6"
+            android:layout_marginRight="@dimen/x6"
+            />
+    </RelativeLayout>
+
+    <com.project.mgjandroid.ui.view.NoScrollGridView
+        android:id="@+id/photo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_container"
+        android:numColumns="4"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:listSelector="@null"
+        />
+
+    <TextView
+        android:id="@+id/tv_photo_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(上传图片最多三张)"
+        android:textSize="11sp"
+        android:textColor="@color/color_6"
+        android:layout_below="@id/photo_container"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_marginLeft="@dimen/x10"
+        />
+
+    <EditText
+        android:id="@+id/opinion_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_below="@id/photo_container"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x12"
+        android:textSize="14sp"
+        android:textColor="@color/gray_2"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/x10"
+        android:inputType="number"
+        android:maxLength="11"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/feed_back_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x43"
+        android:text="@string/submit"
+        android:background="@drawable/bg_login_orange_button"
+        android:layout_below="@id/tv_photo_count"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:enabled="false"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x20"
+        />
+</RelativeLayout>

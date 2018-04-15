@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_merchant_feature_bg">
+
+    <ImageView
+        android:id="@+id/right_menu_item_iv"
+        android:layout_width="@dimen/x16"
+        android:layout_height="@dimen/x16"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x4"
+        android:src="@drawable/jian"/>
+
+    <TextView
+        android:id="@+id/right_menu_item_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mid_and_right_menu_item_iv"
+        android:layout_marginLeft="@dimen/x4"
+        android:layout_centerVertical="true"
+        android:textSize="10sp"
+        android:text="@string/intelligent_sequence"
+        android:textColor="@color/gray_1"/>
+
+
+    <ImageView
+        android:id="@+id/right_menu_item_iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x3"
+        android:src="@drawable/bg_filter_right_or_none"
+        android:visibility="visible"/>
+</LinearLayout>

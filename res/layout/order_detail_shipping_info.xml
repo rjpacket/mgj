@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/x20"
+    android:padding="@dimen/x10" >
+
+    <TextView
+        android:id="@+id/order_detail_tv_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_msg"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/order_detail_shipping_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/order_detail_tv_shipping"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/gray_bg" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_shipping_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_detail_shipping_line"
+        android:layout_marginTop="@dimen/x10"
+        android:text="配送方式: 由商家配送"
+        android:textColor="@color/gray_txt"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_detail_tv_shipping_style"
+        >
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/driver_map"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x200"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/x10"
+            android:alwaysDrawnWithCache="false"
+            android:animationCache="false"
+            >
+
+        </com.baidu.mapapi.map.MapView>
+
+        <ImageView
+            android:id="@+id/map_cache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x200"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.SecondHandMarketActivity"
+    >
+    <include
+        layout="@layout/actionbar"  />
+
+    <LinearLayout
+        android:id="@+id/rent_house_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_mine_stroke_grey"
+        android:visibility="gone"/>
+
+    <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+        android:id="@+id/rent_house_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/xg_scrollbar"/>
+
+    <TextView
+        android:id="@+id/tv_to_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/bg_button_publish"
+        android:text="发布信息"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,435 @@
+<resources>
+
+    <string name="first_page">首页</string>
+    <string name="order">订单</string>
+    <string name="community">社区</string>
+    <string name="mine">个人中心</string>
+    <string name="tag_mine">我的</string>
+    <string name="address_manager">收货地址</string>
+    <string name="serve_center">联系客服</string>
+    <string name="score">欢迎评分</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">我要合作</string>
+    <string name="more_set">我的设置</string>
+    <string name="my_save">我的收藏</string>
+    <string name="my_publish">我的发布</string>
+    <string name="login">登录</string>
+    <string name="search">搜索</string>
+    <string name="cancel_location">取消</string>
+    <string name="search_loc">输入地址</string>
+    <string name="loc_current">定位当前位置</string>
+    <string name="locate_fail">定位失败</string>
+    <string name="locate_by_oneself">去手动定位</string>
+    <string name="locate_reload">重新定位</string>
+    <string name="search_hint">请输入商家名称</string>
+    <string name="evaluate">评价</string>
+    <string name="searching">正在定位,请稍候</string>
+    <string name="picture_saving">保存中</string>
+    <string name="picture_save_fail">保存图片失败，请重试！</string>
+    <string name="picture_save_success">保存成功</string>
+    <string name="loading">正在加载...</string>
+    <string name="goods">商品</string>
+    <string name="merchants">分类</string>
+    <string name="merchants1">商家</string>
+    <string name="collect">收藏</string>
+    <string name="add_more_tips_text">显示下%1$d条</string>
+    <string name="no_data">未获取到信息</string>
+    <string name="step_over">跳 过</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+    <!-- 地址管理 -->
+    <string name="my_address">我的收货地址</string>
+    <string name="add_address">新增地址</string>
+    <string name="modify_address">修改地址</string>
+    <string name="save">确定</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="contact">联系人\u3000</string>
+    <string name="user_name">你的姓名</string>
+    <string name="sir">先生</string>
+    <string name="miss">女士</string>
+    <string name="choose_gender">请选择性别</string>
+    <string name="set_your_name">姓名不能为空</string>
+    <string name="set_your_mobile">请输入正确的手机号</string>
+    <string name="set_your_address">请设置收货地址</string>
+    <string name="set_your_house_number">请输入您的详细地址</string>
+    <string name="phone_num">联系电话</string>
+    <string name="your_mobile">你的手机号</string>
+    <string name="your_option_phone">备选电话</string>
+    <string name="address">收货地址</string>
+    <string name="address_poi">小区/写字楼/学校</string>
+    <string name="houseNumber">详细地址（如门牌号等）</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="current">[当前]</string>
+    <string name="search_fail">找不到地址？\n请尝试只输入小区、写字楼或学校名，\n详细地址（如门牌号）可稍后输入哦~</string>
+    <string name="school">学校</string>
+    <string name="village">小区</string>
+    <string name="office_Building">写字楼</string>
+    <string name="delete">删除</string>
+    <string name="delete_success">删除成功</string>
+    <string name="address_unreach">超出范围</string>
+    <string name="dialog_address_unreach">已经超出配送范围</string>
+    <string name="dialog_address_unreach_change">是否切换到<Data><![CDATA[<font color=\"#E95603\">【%s】</font>]]></Data>的商家列表（切换后之前订单信息将消失）？</string>
+    <string name="dialog_address_confirm">确认切换</string>
+    <string name="dialog_address_cancel">换个地址</string>
+    <string name="label">标签</string>
+    <string name="label_msg">公司</string>
+
+    <!-- 用户信息管理 -->
+    <string name="user_info_account">账户信息</string>
+    <string name="user_info_avatar">头像</string>
+    <string name="user_info_name">用户名</string>
+    <string name="user_info_acount_bind">账号绑定</string>
+    <string name="user_info_not_binding">未绑定</string>
+    <string name="user_info_acount_bind_mobile">手机</string>
+    <string name="user_info_acount_bind_weixin">微信</string>
+    <string name="user_info_acount_bind_qq">QQ</string>
+    <string name="user_info_acount_bind_weibo">微博</string>
+    <string name="user_info_safety">安全设置</string>
+    <string name="user_info_login_password">登录密码</string>
+    <string name="user_info_pay_password">支付密码</string>
+    <string name="user_info_password_not_setting">未设置</string>
+    <string name="user_info_everyday_pay_limit">每日余额支付限额</string>
+    <string name="user_info_everyday_pay_limit_msg">50元</string>
+    <string name="user_info_take_photo">拍照</string>
+    <string name="user_info_pick_photo">从相册选择</string>
+
+    <!-- 余额操作 -->
+    <string name="balance_operate_mine_balance">我的余额</string>
+    <string name="balance_operate_current_balance">当前余额</string>
+    <string name="balance_operate_balance_explanation">余额说明</string>
+    <string name="yuan">元</string>
+    <string name="withdraw">提现</string>
+    <string name="balance_operate_income_detail">最近30天收支明细</string>
+    <string name="balance_operate_has_no_income">暂无收支明细</string>
+
+    <!-- 投诉 -->
+    <string name="complain">投诉</string>
+    <string name="complain_input_your_feedback">请输入您的反馈，我们将不断为您改进，一经核实将尽快联系您</string>
+    <string name="complain_input_your_phone_num">请输入您的手机号</string>
+    <string name="complain_commit">提交</string>
+
+    <!-- 确认订单 -->
+    <string name="confirm_order">确认订单</string>
+    <string name="confirm_order_fast_login">快速登录</string>
+    <string name="confirm_order_input_address">请填写地址</string>
+    <string name="confirm_order_arrival_time">送达时间</string>
+    <string name="confirm_order_select_arrival_time">请选择送达时间</string>
+    <string name="confirm_order_remark">订单备注</string>
+    <string name="confirm_order_taste">口味、偏好等其他需求</string>
+    <string name="confirm_order_invoice_head">发票抬头</string>
+    <string name="confirm_order_not_need_invoice">不需要发票</string>
+    <string name="confirm_order_redbag">使用红包</string>
+    <string name="confirm_order_discount_volume">抵价卷</string>
+    <string name="confirm_order_mealbox_price">餐盒费</string>
+    <string name="confirm_order_delivery_price">配送费</string>
+    <string name="confirm_order_delivery_method">本订单由马管家配送</string>
+    <string name="confirm_order_price_standard">¥2</string>
+    <string name="price_standard_zero">¥0</string>
+    <string name="mix_delivery_price">¥0起送</string>
+    <string name="confirm_order_delivery_destination">送至：华杰大厦</string>
+    <string name="item_confirm_order_list_name">美式土豆培根比萨</string>
+    <string name="item_confirm_order_list_count">x1</string>
+    <string name="item_confirm_order_list_price">￥39</string>
+    <string name="moren">默认</string>
+    <string name="caution_hint">请输入备注内容（可不填）</string>
+    <string name="caution_word_count">%s/50个字</string>
+
+    <!-- 修改用户名 -->
+    <string name="update_username">修改用户名</string>
+    <string name="update_username_confirm">确认修改</string>
+
+    <!-- 评价 -->
+    <string name="item_evaluate_list_name">精品圣女果（斤）</string>
+    <string name="item_evaluate_list_driver_comment">骑手评价</string>
+    <string name="item_evaluate_list_overall_evaluate">总体评价</string>
+
+    <!-- 定位、地图 -->
+    <string name="register">注册</string>
+
+    <!-- 设置 -->
+    <string name="set">设置</string>
+    <string name="clear_img_cache">清除图片缓存</string>
+    <string name="non_wifi">非WIFI下图片质量</string>
+    <string name="auto_update">自动下载最新安装包</string>
+    <string name="push_notice">推送通知</string>
+    <string name="about_mgj">关于马管家</string>
+    <string name="img_cache_size">0B</string>
+    <string name="wifi_state">普通</string>
+    <string name="auto_update_text">仅WI-FI网络</string>
+    <string name="sign_out">退出登录</string>
+
+    <!-- 通知 -->
+    <string name="notice_center">通知中心</string>
+    <string name="net_abnormal">未能连接到互联网</string>
+    <string name="no_favorites">您还没有收藏\n快去收藏喜欢的商家吧</string>
+    <string name="reload">刷新重试</string>
+    <string name="item_notice_type">您成功取消了订单</string>
+    <string name="item_notice_time">03-22 10:54</string>
+    <string name="item_notice_first_content">您在[鸡不可失（XX店）]下的订单</string>
+    <string name="item_notice_order_num">0000000000000000</string>
+    <string name="item_notice_order_cancel">，60分钟内未完成支付，已自动取消</string>
+
+    <!-- 在线支付 -->
+    <string name="online_pay">在线支付</string>
+    <string name="online_pay_order_total_price">订单总价</string>
+    <string name="online_pay_price_standard">¥0</string>
+    <string name="online_pay_by_balance">余额支付</string>
+    <string name="online_pay_by_third_platform">使用第三方平台支付</string>
+    <string name="online_pay_balance_msg">(账户余额：0.0元)</string>
+    <string name="online_pay_login_password">登陆密码</string>
+    <string name="alipay">支付宝</string>
+    <string name="alipay_recommend">推荐已安装支付宝客户端的用户使用</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="wechat">微信</string>
+    <string name="wechat_pay_recommend">推荐已安装微信支付客户端的用户使用</string>
+    <string name="await_more_pay_method">更多支付方式敬请期待</string>
+    <string name="online_pay_confirm">确认支付</string>
+
+    <!-- 主要类别 -->
+    <string name="classification">分类</string>
+    <string name="sequence">排序</string>
+    <string name="filter">筛选</string>
+
+    <!-- 充值 -->
+    <string name="recharge">充值</string>
+    <string name="recharge_number_msg">充值金额：</string>
+    <string name="recharge_number">50.00元</string>
+    <string name="recharge_number_100">100.00元</string>
+    <string name="recharge_number_200">200.00元</string>
+    <string name="recharge_number_300">300.00元</string>
+    <string name="recharge_number_500">500.00元</string>
+    <string name="recharge_method_select">请选择支付方式</string>
+    <string name="more_pay_method">更多支付方式</string>
+    <string name="recharge_confirm">确认充值</string>
+
+    <!-- 短信验证登录 -->
+    <string name="login_by_sms">短信验证码登录</string>
+    <string name="login_by_sms_phone_number">手机号</string>
+    <string name="login_by_sms_get_code">获取验证码</string>
+    <string name="login_by_sms_code">验证码</string>
+    <string name="login_by_sms_start">验证并登录</string>
+    <string name="login_by_third">第三方登录</string>
+    <string name="weibo">微博</string>
+
+    <!-- 提现 -->
+    <string name="balance_withdraw">余额提现</string>
+    <string name="withdraw_confirm">确认</string>
+    <string name="withdraw_rule">每日可提现3次</string>
+    <string name="useful_balance">可提现金额：</string>
+    <string name="useful_balance_number">0.00</string>
+    <string name="input_withdraw_number">请输入提现金额</string>
+    <string name="withdraw_prompt">3个工作日内处理</string>
+    <string name="withdraw_prompt1">如未提现成功请联系客服电话：400-997-4000</string>
+    <string name="item_withdraw_user">用户提现</string>
+    <string name="item_withdraw_time">2016-03-23</string>
+    <string name="item_withdraw_balance">余额：</string>
+    <string name="item_withdraw_balance_num">50.00</string>
+    <string name="item_withdraw_balance_change">+50</string>
+    <string name="withdraw_phone">tel:%s</string>
+    <string name="withdraw_tips">暂时只支持人工提现，请拨打客服电话%s</string>
+
+    <!-- 商家 -->
+    <string name="commercial_name">--</string>
+    <string name="commercial_delivery_rule">--</string>
+    <string name="commercial_delivery_rule1">在线支付满30减15，满50减25</string>
+    <string name="commercial_delivery_rule2">满40元赠送一盒饮料</string>
+    <string name="commercial_announcement">满减规则：满49减20，满99减50</string>
+    <string name="commercial_another_delivery_price">另需配送费¥5</string>
+    <string name="commercial_package_price">包装费¥2</string>
+    <string name="commercial_to_billing">去结算</string>
+    <string name="commercial_comment_username">3******6</string>
+    <string name="commercial_comment_consume_time">40分钟送达</string>
+    <string name="commercial_comment_public_time">2015-12-03 23:45</string>
+    <string name="commercial_comment_find_more">查看更多</string>
+    <string name="commercial_comment_mix_delivery">起送</string>
+    <string name="delivery_price">配送费</string>
+    <string name="free">免</string>
+    <string name="commercial_qisong_price">起送价</string>
+    <string name="delivery_by_merchant">商家配送</string>
+    <string name="delivery_avg_time">平均配送时间</string>
+    <string name="minute">分钟</string>
+    <string name="merchant_msg">商家信息</string>
+    <string name="announcement_and_doing">公告与活动</string>
+    <string name="doing_and_support">活动与支持</string>
+    <string name="merchant_summary">商家简介</string>
+    <string name="wo_will_do_more_better">我们努力做更好的品质外卖</string>
+
+    <!-- 商家评价 -->
+    <string name="commercial_evaluate_complex_score">综合评分</string>
+    <string name="commercial_evaluate_service_attitude">配送服务</string>
+    <string name="commercial_evaluate_dish_score">菜品评分</string>
+    <string name="commercial_evaluate_good_score">商品评分</string>
+    <string name="commercial_evaluate_show_content_only">只看有内容的评价</string>
+    <string name="commercial_evaluate_result">高于周边商家100%</string>
+    <string name="commercial_evaluate_all_count">全部(0)</string>
+
+    <!-- 过渡页 -->
+    <string name="coverpage_first_title">全球首发 微信拼单</string>
+    <string name="coverpage_sub_title">微信群 多人订餐</string>
+
+    <!-- Alertdialog对话框 -->
+    <string name="alertdialog_title">标题</string>
+    <string name="alertdialog_content">AlertDialog的内容</string>
+
+    <!-- 商品详情 -->
+    <string name="good_detail_food_name">招牌牛肉饭（大碗）</string>
+    <string name="yuan_symbol">¥</string>
+    <string name="standard_select">选规格</string>
+    <string name="gool_detail_header_name">烤猪蹄子</string>
+    <string name="gool_detail_header_comment_count">0评价</string>
+    <string name="gool_detail_header_sale_count">月售0份</string>
+    <string name="gool_detail_header_good_summary">商品简介</string>
+    <string name="gool_detail_header_good_evaluate">商品评价</string>
+    <string name="gool_detail_header_good_summary_content">鸡肉 + 牛肉 + 洋葱 + 蔬菜</string>
+    <string name="item_gool_detail_list_time">2016-02-19</string>
+    <string name="item_gool_detail_list_content">不错不错</string>
+
+    <!-- 选规格Dialog -->
+    <string name="standard">规格</string>
+    <string name="checked">已选：</string>
+    <string name="put_into_shopping_cat">加入购物车</string>
+
+    <!-- 首页 -->
+    <string name="delivery_method">配送方式</string>
+    <string name="merchants_character">商家特色</string>
+    <string name="preferential_doing">优惠活动</string>
+
+    <!-- 地址管理列表 -->
+    <string name="address_manage_item_username">XXX</string>
+    <string name="address_manage_item_user_sex">先生</string>
+    <string name="address_manage_item_user_phone">188********</string>
+    <string name="address_manage_item_user_address">XX大厦XX号XX路</string>
+
+    <!-- other -->
+    <string name="new_user">新用户</string>
+    <string name="all_merchants">全部商家</string>
+    <string name="left_menu_name">xx类</string>
+    <string name="today">今天</string>
+    <string name="send_immediately">立即送出</string>
+    <string name="first_order">首单</string>
+    <string name="shopping_cat">购物车</string>
+    <string name="clear_all">清空</string>
+    <string name="merchants_name">机不可失（交大店）</string>
+    <string name="please_select">请选择</string>
+    <string name="search_no_result">未搜索到相关信息，换个地址试试</string>
+    <string name="intelligent_sequence">智能排序</string>
+
+    <!-- 公告 -->
+    <string name="announcement">公告</string>
+    <string name="announcement_content">1.营业时间为8:00-12:00</string>
+
+    <!-- 登录 -->
+    <string name="login_username_hint">手机/邮箱/用户名</string>
+    <string name="login_password">登陆密码</string>
+    <string name="forget_password">忘记密码？</string>
+
+    <!-- 注册 -->
+    <string name="next_get_code">下一步，获取验证码</string>
+    <string name="agree_our_protocol">注册就代表同意《用户服务协议》</string>
+
+    <!-- 我的 -->
+    <string name="please_login">请登录</string>
+    <string name="mine_balance">我的余额</string>
+    <string name="mine_redbag">我的红包</string>
+    <string name="mine_cards">我的银行卡</string>
+    <string name="my_card_no">尾号 %s</string>
+    <string name="has_no_redbag">您目前没有红包</string>
+    <string name="has_no_bank_card">您没有绑定银行卡</string>
+
+    <!-- 订单详情 -->
+    <string name="order_again">再来一单</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="to_pay_order">去支付（还剩15分00秒）</string>
+    <string name="reminders">催单</string>
+    <string name="chargeback">退单</string>
+    <string name="sure_delivery">确认送达</string>
+    <string name="check_order_detail">查看订单详情</string>
+    <string name="immediately_preferential">立减优惠</string>
+    <string name="immediately_preferential_num">一￥12</string>
+    <string name="complex_price">合计￥89</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_number">订单号：1002 3986 1498 7933 72</string>
+    <string name="order_username">联系人: 谢飞</string>
+    <string name="order_user_phone">联系电话: 15696325987</string>
+    <string name="order_user_address">收货地址: 新源街37号楼2单元503</string>
+    <string name="order_user_paytype">支付方式: 餐到付款</string>
+    <string name="order_user_buy_time">下单时间: 2015-12-13 12:12</string>
+    <string name="order_user_arrive_time">送达时间: 尽快送出</string>
+    <string name="order_has_complete">订单已完成</string>
+    <string name="order_has_complete_sub">订单超过三小时在自动完成</string>
+    <string name="order_has_complete_commit">订单已提交</string>
+    <string name="merchant_has_receive_order">商家已接单</string>
+    <string name="wait_receive_goods">等待取货</string>
+    <string name="goods_has_arrive">已送达</string>
+    <string name="delivery_msg">配送信息</string>
+    <string name="order_delivery_method">配送方式: 由商家配送</string>
+
+    <!-- 订单列表 -->
+    <string name="also_has">尚有</string>
+    <string name="order_fragment_content">单未评价，立刻评价最多可获得</string>
+    <string name="order_fragment_score">积分</string>
+    <string name="order_list_total_price_msg">共0份,实付</string>
+    <string name="order_list_total_price">¥0.00</string>
+    <string name="evaluate_get_score">评价</string>
+
+    <!-- 余额详情 -->
+    <string name="balance_condition1">Q1：使用余额的条件</string>
+    <string name="balance_condition1_content">为了保护账号安全，使用余额支付必须先绑定手机号</string>
+    <string name="balance_condition2">Q2：余额可以怎么用</string>
+    <string name="balance_condition2_content">余额可以在马管家平台上支持在线支付的商家中进行消费</string>
+
+    <!-- 分享 -->
+    <string name="share">分享到</string>
+    <string name="share_to_wachat">微信</string>
+    <string name="share_to_wx_circle">朋友圈</string>
+    <string name="share_to_qq">QQ好友</string>
+    <string name="share_to_qzone">QQ空间</string>
+    <string name="share_merchant">这家店还不错，%s可以叫他们家外卖哦！</string>
+    <string name="share_goods">世界很大，可我只想把最好的给你—%s</string>
+
+    <!-- 收藏 -->
+    <string name="favor_title">提示</string>
+    <string name="favor_msg">登陆后才可以收藏商家哦</string>
+    <string name="favor_cancel">以后再说</string>
+    <string name="favor_login">登录</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="has_choose_img">已选择 %s 张</string>
+    <string name="choose_img_max_count">最多只能选择%s张图片哦~~</string>
+    <string name="feed_back_title">意见反馈</string>
+    <string name="img_folder_title">选择图片</string>
+    <string name="feed_back_hint">请简要描述您所遇到的问题，我们会尽快为您解决问题。</string>
+    <string name="feed_back_img_max_count">上传图片最多3张</string>
+
+    <string name="extra_two_day">3个工作日内处理，如未提现成功，请联系客服电话：</string>
+    <string name="extra_tip">提现金额%s元</string>
+    <string name="extra_tip2">可能由于网络原因，提交失败，请检查网络后重新提交。</string>
+    <string name="back">后退</string>
+    <string name="about_title">关于</string>
+    <string name="welcome">欢迎页</string>
+    <string name="shangwu_hezuo">商务合作</string>
+    <string name="yonghu_fuwu_xieyi">用户服务协议</string>
+    <string name="v">V </string>
+    <string name="withdraw_tip1">您输入的金额超出了可提现金额</string>
+    <string name="add_card">添加银行卡</string>
+    <string name="submit">提交</string>
+
+    <string name="full_time_title">职位类型</string>
+    <string name="full_time_publish">发布求职信息</string>
+    <string name="full_time_publish_1">发布招聘信息</string>
+    <string name="send_code_success">发送成功</string>
+    <string name="send_code_failed">发送失败</string>
+    <string name="choose_area">请选择信息发布的区域</string>
+</resources>

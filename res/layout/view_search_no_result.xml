@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:visibility="visible">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/filter_no_result"
+        android:layout_marginTop="@dimen/x72"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x19"
+        android:text="没有筛选结果"
+        android:textSize="17sp"
+        android:textColor="#acaba4"/>
+    <TextView
+        android:id="@+id/clear_filter_condition"
+        android:layout_width="@dimen/x108"
+        android:layout_height="@dimen/x35"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x19"
+        android:textColor="@color/white"
+        android:text="清空筛选"
+        android:background="@drawable/shap_corner_red_bg"/>
+
+
+</LinearLayout>

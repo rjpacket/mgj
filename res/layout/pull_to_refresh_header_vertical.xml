@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x6"
+        android:paddingTop="@dimen/x6" >
+
+  <!--       <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical" >
+
+            <ImageView
+                android:id="@+id/pull_to_refresh_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ProgressBar
+                android:id="@+id/pull_to_refresh_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </FrameLayout> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+            
+            
+            <ImageView
+                android:id="@+id/pull_to_refresh_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" 
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/pull_to_refresh_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+            
+            
+
+            <TextView
+                android:id="@+id/pull_to_refresh_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textStyle="bold"
+                  android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pull_to_refresh_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+              />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/first_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/second_pic"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/run_horse"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x50"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</merge>

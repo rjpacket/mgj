@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <RelativeLayout
+        android:id="@+id/notice_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/balance_explanation_act_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginStart="@dimen/x10"
+            android:background="@drawable/icon_back"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/back"
+            />
+
+        <TextView
+            android:id="@+id/balance_explanation_act_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/balance_operate_balance_explanation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x12"
+        android:paddingRight="@dimen/x12"
+        android:paddingTop="@dimen/x18"
+        android:paddingBottom="@dimen/x18"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance_condition1"
+            android:textSize="15sp"
+            android:textColor="#373734"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance_condition1_content"
+            android:layout_marginTop="@dimen/x18"
+            android:textSize="14sp"
+            android:textColor="#727272"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x12"
+        android:paddingRight="@dimen/x12"
+        android:paddingTop="@dimen/x18"
+        android:paddingBottom="@dimen/x18"
+        android:layout_marginTop="1px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance_condition2"
+            android:textSize="15sp"
+            android:textColor="#373734"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance_condition2_content"
+            android:layout_marginTop="@dimen/x18"
+            android:textSize="14sp"
+            android:textColor="#727272"/>
+    </LinearLayout>
+
+
+</LinearLayout>

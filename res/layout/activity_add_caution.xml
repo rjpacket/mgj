@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10" >
+
+        <ImageView
+            android:id="@+id/add_caution_act_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:text="@string/confirm_order_remark"
+            android:textSize="@dimen/title_bar_text_size"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x132"
+        android:layout_marginTop="@dimen/x10"
+        android:padding="@dimen/x12"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/add_caution_act_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#888888"
+            android:hint="@string/caution_hint"
+            android:gravity="top|left"
+            android:textSize="14sp"
+            android:maxLength="50"
+            android:textColor="@color/gray_1"
+            android:background="@drawable/caution_edit_bg"
+            android:padding="@dimen/x5"/>
+
+        <TextView
+            android:id="@+id/add_caution_act_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/x4"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:text="0/50个字"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_caution_act_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginRight="@dimen/x12"
+        android:background="@drawable/bg_login_orange_button"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

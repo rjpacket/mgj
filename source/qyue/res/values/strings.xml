@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Q悦生活</string>
+    <string name="wechat_appsecret">e589fc91bb4737a9e323e5a6cd493c5b</string>
+    <string name="wechat_appid">wxf86e0dbe1da200c8</string>
+    <string name="jpush_appsecret">3179d1e8470afdfe14a86cf6</string>
+    <string name="tencent_appid">1105352962</string>
+    <string name="tencent_appsecret">emitu9s8PRS24Eu4</string>
+    <string name="baidu_appsecret">lOrerZlV2bYrgE0B8g7pNiZDbiwLztl2</string>
+    <string name="umeng_appsecret">571a0582e0f55aaf60001045</string>
+    <string name="app_nick">mgjUser</string>
+    <string name="sale_phone">0738-3220888</string>
+    <string name="online_pay_contact_service">订单如需退款，请联系客服：0738-3220888</string>
+    <string name="app_scheme">qyue</string>
+    <string name="to_home_page">进入Q悦生活</string>
+</resources>

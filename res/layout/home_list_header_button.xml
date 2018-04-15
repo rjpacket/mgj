@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/button_layout_listview_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_listview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x36"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/merchants"
+            android:drawableRight="@drawable/nabla_black"
+            android:drawablePadding="@dimen/x6"
+            android:singleLine="true"
+            android:textColor="@color/color_3"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/x22"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_bg"/>
+
+        <LinearLayout
+            android:id="@+id/button_layout_listview_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_listview_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x36"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/sequence"
+                android:drawableRight="@drawable/nabla_black"
+                android:drawablePadding="@dimen/x6"
+                android:singleLine="true"
+                android:textColor="@color/color_3"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/x22"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_bg"/>
+
+        <LinearLayout
+            android:id="@+id/button_layout_listview_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_listview_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x36"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/filter"
+                android:drawableRight="@drawable/nabla_black"
+                android:drawablePadding="@dimen/x6"
+                android:singleLine="true"
+                android:textColor="@color/color_3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg"
+        android:layout_marginBottom="@dimen/x1"/>
+
+</LinearLayout>

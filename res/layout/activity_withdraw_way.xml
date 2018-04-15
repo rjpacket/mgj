@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.WithdrawWayActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/withdraw_cash_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/x15"
+            />
+
+        <TextView
+            android:id="@+id/withdraw_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00元"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:textSize="16sp"
+            android:textColor="@color/orange_ff"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/x15"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="银行卡提现"
+            android:textColor="#333333"
+            android:layout_marginLeft="@dimen/x15"
+            android:drawableLeft="@drawable/icon_withdraw"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="添加银行卡"
+            android:textColor="#666666"
+            android:layout_marginLeft="@dimen/x20"
+            android:drawableLeft="@drawable/withdraw_add"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/withdraw_way_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="16sp"
+        android:background="@drawable/shap_corner_red_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingTop="@dimen/x13"
+        android:paddingBottom="@dimen/x13"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x30"
+        />
+
+</LinearLayout>

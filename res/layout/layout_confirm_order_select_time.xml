@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <View
+            android:id="@+id/popup_outside"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00676767"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <ListView
+                android:id="@+id/day_list_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#efefef"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                >
+
+            </ListView>
+            <ListView
+                android:id="@+id/time_list_view"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                >
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line"
+        />
+
+    <TextView
+        android:id="@+id/select_time_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:paddingTop="@dimen/x10"
+        android:paddingBottom="@dimen/x10"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/common_black_text"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

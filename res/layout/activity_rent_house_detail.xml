@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.project.mgjandroid.ui.activity.SecondHandDetailActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/top_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x280"
+                android:visibility="visible"
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/rent_house_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/rent_house_page_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/0"
+                    android:padding="@dimen/x8"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/bg_gray_shape"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/x20"
+                >
+
+                <TextView
+                    android:id="@+id/rent_house_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签"
+                    android:textSize="12sp"
+                    android:textColor="#ff9900"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x14"
+                    android:background="@drawable/shap_org_range_bg"
+                    android:layout_marginTop="@dimen/x15"
+                    />
+
+                <TextView
+                    android:id="@+id/rent_house_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginTop="@dimen/x21"
+                    android:layout_alignBaseline="@id/rent_house_tag"
+                    android:textColor="@color/color_3"
+                    android:layout_toLeftOf="@id/rent_house_tag"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/rent_house_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="24sp"
+                    android:textColor="#fb4b18"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_below="@id/rent_house_name"
+                    android:layout_marginTop="@dimen/x13"
+                    />
+
+                <TextView
+                    android:id="@+id/rent_house_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间："
+                    android:textSize="12sp"
+                    android:textColor="@color/color_9"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_below="@id/rent_house_price"
+                    android:layout_marginTop="@dimen/x13"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/gray_white"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:id="@+id/type_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/x21"
+                    android:paddingBottom="@dimen/x21"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户型"
+                        android:textColor="@color/color_9"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        />
+
+                    <TextView
+                        android:id="@+id/rent_house_type"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_3"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/rent_house_area_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面积"
+                        android:textColor="@color/color_9"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        />
+
+                    <TextView
+                        android:id="@+id/rent_house_area"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_3"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/type_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_gray_line"
+                    android:layout_below="@id/type_label"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/x21"
+                    android:paddingBottom="@dimen/x21"
+                    android:layout_below="@id/type_line"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地段"
+                        android:textColor="@color/color_9"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        />
+
+                    <TextView
+                        android:id="@+id/rent_house_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_3"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/x14"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/gray_white"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细信息"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginTop="@dimen/x20"
+                    android:textColor="@color/color_9"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/rent_house_jubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_9"
+                    android:text="举报"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginRight="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/rent_house_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x6"
+                    android:layout_below="@id/rent_house_jubao"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginRight="@dimen/x14"
+                    android:textColor="@color/color_3"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/rent_house_detail_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x43"
+        android:text="联系方式"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_login_orange_button"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:gravity="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/gray_white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tag_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门专区"
+        android:textColor="@color/color_3"
+        android:drawableLeft="@drawable/rect"
+        android:drawablePadding="@dimen/x5"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        />
+
+    <com.project.mgjandroid.ui.view.NoScrollGridView
+        android:id="@+id/tag_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/x4"
+        android:horizontalSpacing="@dimen/x4"
+        android:listSelector="@drawable/transparent"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        >
+
+    </com.project.mgjandroid.ui.view.NoScrollGridView>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+        android:id="@+id/red_bag_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/xg_scrollbar" />
+
+    <RelativeLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x150"
+            android:drawableTop="@drawable/has_no_redbag"
+            android:drawablePadding="@dimen/x22"
+            android:textColor="@color/color_9"
+            android:textSize="14sp"
+            android:text="@string/has_no_redbag"/>
+
+        <TextView
+            android:id="@+id/tv_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="13sp"
+            android:textColor="@color/color_9"
+            android:text="查看历史红包 >>"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

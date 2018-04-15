@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/order_detail_commercial_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/item_confirm_order_list_name"
+        android:textColor="@color/gray_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/order_detail_commercial_meal_money"
+        android:layout_width="@dimen/x80"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:text="@string/item_confirm_order_list_price"
+        android:textColor="@color/gray_txt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/order_detail_commercial_meal_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_toLeftOf="@id/order_detail_commercial_meal_money"
+        android:text="@string/item_confirm_order_list_count"
+        android:textColor="@color/gray_txt"
+        android:textSize="12sp" />
+
+</RelativeLayout>

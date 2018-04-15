@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.ChooseCityActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/choose_city_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@drawable/bg_mine_stroke_grey"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换到其他城市"
+            android:textSize="14sp"
+            android:textColor="@color/color_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/content_open"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:padding="@dimen/x10"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位城市"
+        android:textSize="14sp"
+        android:textColor="@color/color_9"
+        android:drawablePadding="@dimen/x5"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        >
+        <TextView
+            android:id="@+id/city_location"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x42"
+            android:text="正在定位..."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_3"
+            android:background="@drawable/bg_white_shape_stroke"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x40"
+            android:text="北京"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/color_3"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/x16"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x40"
+            android:text="北京"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/color_3"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/x16"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/history_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史城市"
+        android:textSize="14sp"
+        android:textColor="@color/color_9"
+        android:drawablePadding="@dimen/x5"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        />
+
+    <com.project.mgjandroid.ui.view.NoScrollGridView
+        android:id="@+id/history_city_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/x11"
+        android:horizontalSpacing="@dimen/x16"
+        android:listSelector="@drawable/transparent"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        >
+
+    </com.project.mgjandroid.ui.view.NoScrollGridView>
+
+    <TextView
+        android:id="@+id/hot_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门城市"
+        android:textSize="14sp"
+        android:textColor="@color/color_9"
+        android:drawablePadding="@dimen/x5"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        />
+
+    <GridView
+        android:id="@+id/hot_city_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/x11"
+        android:horizontalSpacing="@dimen/x16"
+        android:listSelector="@drawable/transparent"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        >
+
+    </GridView>
+</LinearLayout>

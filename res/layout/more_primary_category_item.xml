@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/x15"
+    android:paddingTop="@dimen/x15"
+    android:paddingRight="@dimen/x15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x3"
+            android:layout_height="@dimen/x14"
+            android:background="@color/title_bar_bg"/>
+
+        <TextView
+            android:id="@+id/service_primary_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:textColor="@color/color_3"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/service_primary_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:textSize="12sp"
+            android:textColor="@color/color_6"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <com.project.mgjandroid.ui.view.NoScrollGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:listSelector="@null"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/bg_white_shape_stroke"/>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+{
+  "status": 0,
+  "result": {
+    "location": {
+      "lng": 116.34768999999993,
+      "lat": 39.970780072476025
+    },
+    "formatted_address": "北京市海淀区四道口北街",
+    "business": "大钟寺,皂君庙,蓟门桥",
+    "addressComponent": {
+      "adcode": "110108",
+      "city": "北京市",
+      "country": "中国",
+      "direction": "",
+      "distance": "",
+      "district": "海淀区",
+      "province": "北京市",
+      "street": "四道口北街",
+      "street_number": "",
+      "country_code": 0
+    },
+    "pois": [
+      {
+        "addr": "北京市海淀区大钟寺村14号楼",
+        "cp": "NavInfo",
+        "direction": "内",
+        "distance": "0",
+        "name": "大钟寺村14号楼",
+        "poiType": "房地产",
+        "point": {
+          "x": 116.34794573394325,
+          "y": 39.97078996784854
+        },
+        "tag": "房地产",
+        "tel": "",
+        "uid": "06311ed1bac119b45d17c308",
+        "zip": ""
+      },
+      {
+        "addr": "北京市海淀区西道口北街",
+        "cp": "NavInfo",
+        "direction": "西北",
+        "distance": "58",
+        "name": "华杰大厦A",
+        "poiType": "房地产",
+        "point": {
+          "x": 116.34799064921874,
+          "y": 39.97045128307467
+        },
+        "tag": "房地产;写字楼",
+        "tel": "",
+        "uid": "92a8c5b91880fa90ab175aaa",
+        "zip": ""
+      },
+      {
+        "addr": "大钟寺13",
+        "cp": "NavInfo",
+        "direction": "西北",
+        "distance": "58",
+        "name": "华杰大厦b",
+        "poiType": "房地产",
+        "point": {
+          "x": 116.34799064921874,
+          "y": 39.97045128307467
+        },
+        "tag": "房地产;写字楼",
+        "tel": "",
+        "uid": "47e51711f1742dad2fe67bcd",
+        "zip": ""
+      },
+      {
+        "addr": "北京市海淀区西道口北街",
+        "cp": "NavInfo",
+        "direction": "西北",
+        "distance": "58",
+        "name": "华杰大厦C",
+        "poiType": "房地产",
+        "point": {
+          "x": 116.34799064921874,
+          "y": 39.97045128307467
+        },
+        "tag": "房地产;写字楼",
+        "tel": "",
+        "uid": "de37d0440952535ab8bd63a5",
+        "zip": ""
+      },
+      {
+        "addr": "四道口路大钟寺14号",
+        "cp": "NavInfo",
+        "direction": "附近",
+        "distance": "11",
+        "name": "北京人和嘉德商务酒店",
+        "poiType": "酒店",
+        "point": {
+          "x": 116.34779302200654,
+          "y": 39.97076232017531
+        },
+        "tag": "酒店",
+        "tel": "",
+        "uid": "7a8a9437c7f7bcfb0482c24f",
+        "zip": ""
+      },
+      {
+        "addr": "北京市海淀区大钟寺村14号",
+        "cp": "NavInfo",
+        "direction": "西南",
+        "distance": "49",
+        "name": "海淀区人口和家庭宣传服务中心",
+        "poiType": "政府机构",
+        "point": {
+          "x": 116.34802658143914,
+          "y": 39.971004236933936
+        },
+        "tag": "政府机构;行政单位",
+        "tel": "",
+        "uid": "fb6aa484480571e69d9d68cc",
+        "zip": ""
+      },
+      {
+        "addr": "四道口路大钟寺14号",
+        "cp": "NavInfo",
+        "direction": "附近",
+        "distance": "11",
+        "name": "国家人口计生委机关服务中心培训部",
+        "poiType": "教育培训",
+        "point": {
+          "x": 116.34779302200654,
+          "y": 39.97076232017531
+        },
+        "tag": "教育培训;培训机构",
+        "tel": "",
+        "uid": "560327c48068bb0db1077d44",
+        "zip": ""
+      },
+      {
+        "addr": "海淀区北三环西路甲18号大钟寺中坤广场C座(近大钟寺)",
+        "cp": "NavInfo",
+        "direction": "东",
+        "distance": "94",
+        "name": "凯旋门大酒店",
+        "poiType": "酒店",
+        "point": {
+          "x": 116.34684081816597,
+          "y": 39.97078305593129
+        },
+        "tag": "酒店;星级酒店",
+        "tel": "",
+        "uid": "5c2dc21d99f69c1d6ec02ce5",
+        "zip": ""
+      },
+      {
+        "addr": "大钟寺13号华杰大厦号6层B7",
+        "cp": "NavInfo",
+        "direction": "西北",
+        "distance": "58",
+        "name": "中国人民财产保险公司",
+        "poiType": "金融",
+        "point": {
+          "x": 116.34799064921874,
+          "y": 39.97045128307467
+        },
+        "tag": "金融;投资理财",
+        "tel": "",
+        "uid": "5b8edb4e36f788e9fbdc85b8",
+        "zip": ""
+      },
+      {
+        "addr": "大钟寺13号华杰大厦7层B11",
+        "cp": "NavInfo",
+        "direction": "西北",
+        "distance": "58",
+        "name": "北京国都学术书店",
+        "poiType": "购物",
+        "point": {
+          "x": 116.34799064921874,
+          "y": 39.97045128307467
+        },
+        "tag": "购物;商铺",
+        "tel": "",
+        "uid": "0523a14102f8bc04b33c81ac",
+        "zip": ""
+      }
+    ],
+    "poiRegions": [],
+    "sematic_description": "大钟寺村14号楼内0米",
+    "cityCode": 131
+  }
+}

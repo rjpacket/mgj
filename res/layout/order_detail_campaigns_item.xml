@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/order_detail_commercial_promotion_icon"
+            android:layout_width="@dimen/x12"
+            android:layout_height="@dimen/x12"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/order_detail_commercial_campaign_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/order_detail_commercial_promotion_icon"
+            android:layout_marginLeft="@dimen/x5"
+            android:textColor="@color/gray_txt"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/order_detail_commercial_meal_campaign_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_txt"
+            android:textSize="12sp" />
+    </RelativeLayout>

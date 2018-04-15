@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_default_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/common_gray_text"
+        android:padding="@dimen/x14"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/x8"
+        android:gravity="center_vertical|left"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#19000000"/>
+
+</LinearLayout>

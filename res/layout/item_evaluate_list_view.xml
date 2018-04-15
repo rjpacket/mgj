@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_evaluate_list_name"
+            android:textColor="@color/common_black_text"
+            />
+        <com.project.mgjandroid.ui.view.RatingBarView
+            android:id="@+id/driver_rat_score"
+            bao:starImageSize = "@dimen/x22"
+            bao:starCount = "5"
+            bao:starEmpty = "@drawable/evaluate_goods_default"
+            bao:starFill = "@drawable/evaluate_goods_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x8"
+            />
+
+        <EditText
+            android:id="@+id/evaluate_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/item_evaluate_list_driver_comment"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/x8"
+            android:visibility="gone"
+            android:maxLength="120"
+            android:background="@drawable/shap_gray_strole_white_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"
+            android:layout_marginTop="@dimen/x6"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/et_bg_publish_info"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x15"
+            android:text="个人"
+            android:textColor="@color/color_3"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#19000000"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x15"
+            android:text="商家"
+            android:textColor="@color/color_3"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

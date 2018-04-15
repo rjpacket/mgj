@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x16"
+        android:paddingTop="@dimen/x16" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/evaluate_fragment_tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/org_yellow"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:gravity="center"
+                android:text="@string/commercial_evaluate_complex_score"
+                android:textColor="@color/deep_gray_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/evaluate_tv_higher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4"
+                android:gravity="center"
+                android:textColor="@color/gray_txt"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10" >
+
+                <TextView
+                    android:id="@+id/evaluate_fragment_service_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/x4"
+                    android:text="服务态度"
+                    android:textColor="@color/deep_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/evaluate_fragment_rat_service_score"
+                    style="@style/RatingBar.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@id/evaluate_fragment_service_score"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/evaluate_fragment_tv_service_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@id/evaluate_fragment_rat_service_score"
+                    android:textColor="@color/org_yellow"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20" >
+
+                <TextView
+                    android:id="@+id/evaluate_fragment_evaluate_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/commercial_evaluate_dish_score"
+                    android:textColor="@color/deep_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/evaluate_fragment_rat_evaluate_score"
+                    style="@style/RatingBar.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@id/evaluate_fragment_evaluate_score"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/evaluate_fragment_tv_evaluate_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@id/evaluate_fragment_rat_evaluate_score"
+                    android:textColor="@color/org_yellow"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/x10" >
+
+        <TextView
+            android:id="@+id/evaluate_fragment_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap_org_solid_bg"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/evaluate_fragment_satisfy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x4"
+            android:background="@drawable/shap_gray_range_bg"
+            android:drawableLeft="@drawable/point_face"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/gray_txt"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/evaluate_fragment_yawp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x4"
+            android:background="@drawable/shap_gray_range_bg"
+            android:drawableLeft="@drawable/point_face_cry"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/gray_txt"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@drawable/shap_xu_line_gray" />
+
+        <TextView
+            android:id="@+id/evaluate_fragment_show_un_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/point_choose"
+            android:drawablePadding="@dimen/x6"
+            android:gravity="center_vertical"
+            android:padding="@dimen/x10"
+            android:text="只看有内容的评价"
+            android:textColor="@color/deep_gray_color" />
+    </LinearLayout>
+
+</LinearLayout>

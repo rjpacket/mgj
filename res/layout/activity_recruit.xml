@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/recruit_position_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_mine_stroke_grey"
+        android:visibility="gone"/>
+
+    <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/xg_scrollbar"/>
+
+    <TextView
+        android:id="@+id/tv_to_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/bg_button_publish"
+        android:text="发布信息"
+        android:gravity="center"/>
+
+</LinearLayout>

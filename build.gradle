@@ -1,0 +1,225 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.7'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext.appVersionCode = 8
+ext.appVersionName = "2.4.0"
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    apt 'com.github.mzule.activityrouter:compiler:1.1.1'
+    //    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.mzule.activityrouter:activityrouter:1.1.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId = "com.project.mgjandroid"
+    }
+
+    defaultConfig {
+        applicationId "com.project.mgjandroid"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode appVersionCode
+        versionName appVersionName
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file("maguanjia.jks")
+            storePassword 'maguanjia'
+            keyAlias 'maguanjia'
+            keyPassword 'maguanjia'
+        }
+    }
+    buildTypes {
+        debug {
+            // 不开启混淆
+            minifyEnabled false
+            // 不开启ZipAlign优化
+            zipAlignEnabled true
+            // 不移除无用的resource文件
+            shrinkResources false
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "IS_DEBUG", "true"
+        }
+        release {
+            // 不开启混淆
+            minifyEnabled false
+            // 不开启ZipAlign优化
+            zipAlignEnabled true
+            // 不移除无用的resource文件
+            shrinkResources true
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "IS_DEBUG", "false"
+        }
+
+        applicationVariants.all { variant ->
+//            variant.processManifest.doLast{
+//                copy {
+//                    from("${buildDir}/manifests") {
+//                        include "${variant.dirName}/AndroidManifest.xml"
+//                    }
+//                    into("${buildDir}/manifests/$variant.name")
+//                    filter {
+//                        String line -> line.replaceAll("UMENG_CHANNEL_VALUE", "$variant.name")
+//                    }
+//                    variant.processResources.manifestFile = file("${buildDir}/manifests/${variant.name}/${variant.dirName}/AndroidManifest.xml")
+//                }
+//            }
+
+            variant.outputs.each { output ->
+                if (isInJenkins()) {
+                    output.outputFile = new File(
+                            output.outputFile.parent,
+                            ("mgjclient-${variant.name}-${variant.versionName}-" + getJenkinsBuildCode() + ".apk").toLowerCase())
+                } else {
+                    output.outputFile = new File(
+                            output.outputFile.parent,
+                            ("mgjclient-${variant.name}-${variant.versionName}-" + buildTime() + ".apk").toLowerCase())
+                }
+                if (output.zipAlign != null) {
+                    output.zipAlign.doLast {
+                        output.zipAlign.inputFile.delete()
+                    }
+                }
+            }
+        }
+    }
+
+    // 禁止Lint出错导致打包异常终止
+    lintOptions {
+        disable 'MissingTranslation', 'ExtraTranslation'
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        qyue {
+            res.srcDirs = ['source/qyue/res']
+            java.srcDirs = ['source/qyue/src']
+        }
+
+        horsegj {
+            res.srcDirs = ['source/horsegj/res']
+            java.srcDirs = ['source/horsegj/src']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    productFlavors {
+        qyue {
+            applicationId "com.project.mgjandroid"
+            manifestPlaceholders = [APP_ID: "com.project.mgjandroid"]
+        }
+
+        horsegj {
+            applicationId "com.horsegj.company"
+            manifestPlaceholders = [APP_ID: "com.horsegj.company"]
+        }
+    }
+}
+
+def buildTime() {
+    return new Date().format("yyyy-MM-dd_HH-mm-ss")
+}
+
+/**
+ * 判断是否有jenkins
+ * @return
+ */
+boolean isInJenkins() {
+    Map<String, String> map = System.getenv()
+    if (map == null) {
+        return false
+    }
+    String str = map.get("Path")
+    if (str != null) {
+        return false;
+    } else {
+        str = ""
+        Iterator it = map.iterator()
+        while (it.hasNext()) {
+            str += it.next()
+        }
+        if (str.contains("jenkins")) {
+            return true
+        } else {
+            return false
+        }
+    }
+    return false
+}
+
+/**
+ * 获取Jenkins Build 号
+ * @return
+ */
+def getJenkinsBuildCode() {
+    boolean flag = isInJenkins()
+    if (flag) {
+        ext.env = System.getenv()
+        ext.buildNumber = env.BUILD_NUMBER?.toInteger()
+        return "$buildNumber"
+    } else {
+        return 0
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}

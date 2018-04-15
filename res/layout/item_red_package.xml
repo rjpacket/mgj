@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_content_view"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/x14"
+    android:paddingRight="@dimen/x14"
+    android:paddingTop="@dimen/x10">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/x10"
+        android:background="@drawable/bg_mine_stroke_grey">
+
+        <com.project.mgjandroid.ui.view.CornerImageView
+            android:id="@+id/merchant_icon"
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/x54"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginTop="@dimen/x15"
+            app:borderRadius="@dimen/x4"
+            app:type="round"
+            android:src="@drawable/home_default"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/merchant_icon"
+            android:layout_marginLeft="@dimen/x12"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_3"
+                android:textSize="15sp"
+                tools:text="麻辣女巫"/>
+
+            <TextView
+                android:id="@+id/tv_red_bag_restrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@color/title_bar_bg"
+                android:layout_marginTop="@dimen/x4"
+                android:textSize="11sp"
+                tools:text="满48元可用"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9"
+                android:layout_marginTop="@dimen/x4"
+                android:textSize="11sp"
+                android:text="有效期"/>
+
+            <TextView
+                android:id="@+id/effect_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9"
+                android:layout_marginTop="@dimen/x1"
+                android:textSize="9sp"
+                tools:text="2016.05.20-2016.05.27"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/to_use_red_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/use_now">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x18"
+            android:layout_marginLeft="@dimen/x54"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/discount_amt_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="¥"/>
+
+            <TextView
+                android:id="@+id/discount_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="@dimen/x2"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:text="10"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

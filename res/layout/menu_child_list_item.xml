@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x45"
+    android:paddingLeft="@dimen/x10"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/menu_item_classify_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:text="品牌快餐"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray_1"/>
+
+
+    <TextView
+        android:id="@+id/menu_item_classify_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:textSize="12sp"
+        android:text="288"
+        android:textColor="@color/gray_txt"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bg"/>
+
+</RelativeLayout>

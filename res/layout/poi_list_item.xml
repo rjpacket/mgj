@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:paddingTop="@dimen/x4"
+    android:paddingBottom="@dimen/x4" >
+
+    <TextView
+        android:id="@+id/poi_list_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/poi_list_item_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_txt"
+        android:textSize="12sp" />
+
+</LinearLayout>

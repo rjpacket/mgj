@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/x20"
+        >
+        <ImageView
+            android:id="@+id/shop_icon"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:src="@drawable/pic_jixiang"
+            />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commercial_name"
+            android:layout_toRightOf="@id/shop_icon"
+            android:layout_marginLeft="@dimen/x20"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/shop_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commercial_delivery_rule"
+            android:layout_alignLeft="@id/shop_name"
+            android:layout_below="@id/shop_name"
+            android:layout_marginTop="@dimen/x3"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/adv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commercial_delivery_rule1"
+            android:layout_alignLeft="@id/shop_desc"
+            android:layout_below="@id/shop_desc"
+            android:layout_marginTop="@dimen/x10"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commercial_delivery_rule2"
+            android:layout_alignLeft="@id/adv_one"
+            android:layout_below="@id/adv_one"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

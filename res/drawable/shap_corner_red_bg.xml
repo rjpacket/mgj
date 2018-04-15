@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+  <shape >
+    <corners android:radius="@dimen/x5"/>
+    <solid android:color="#FCBE5F" />
+  </shape>
+</item>
+
+  <item android:state_enabled="false">
+    <shape >
+      <corners android:radius="5dp" />
+      <solid android:color="#FCBE5F" />
+    </shape>
+  </item>
+
+<item>
+  <shape >
+    <corners android:radius="5dp" />
+    <solid android:color="@color/title_bar_bg" />
+  </shape>
+</item>
+</selector>

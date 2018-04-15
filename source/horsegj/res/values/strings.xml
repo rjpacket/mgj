@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">马管家</string>
+    <string name="wechat_appsecret">3408ff5f8eaf5d2de93e3948c0f50247</string>
+    <string name="wechat_appid">wx1d8b9998cb2a0102</string>
+    <string name="jpush_appsecret">988bf1bf07dabb8e29e1e28e</string>
+    <string name="tencent_appid">1105350596</string>
+    <string name="tencent_appsecret">7z3bkmxtzfEzNbxB</string>
+    <string name="baidu_appsecret">ke2eqInphT4QiwmsAr3jr7VgifS6Ua6q</string>
+    <string name="umeng_appsecret">570c7078e0f55ad44b000de1</string>
+    <string name="app_nick">horsegjUser</string>
+    <string name="sale_phone">400-997-4000</string>
+    <string name="online_pay_contact_service">订单如需退款，请联系客服：0791-83807886</string>
+    <string name="app_scheme">horsegj</string>
+    <string name="to_home_page">进入马管家</string>
+
+</resources>

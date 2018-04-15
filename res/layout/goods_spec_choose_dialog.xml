@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_white">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="@dimen/x15"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:padding="@dimen/x15"
+        android:orientation="vertical"
+        android:background="@color/item_group_bg_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_1"
+            android:textSize="14sp"
+            android:text="@string/standard"/>
+
+        <com.project.mgjandroid.ui.view.FlowLayout
+            android:id="@+id/goods_spec_flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_1"
+            android:textSize="14sp"
+            android:text="已选："/>
+
+        <TextView
+            android:id="@+id/tv_choosed_goods_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuan_symbol"
+        android:textColor="@color/org_yellow"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/org_yellow"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/x5"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_goods_spec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/x15"
+        android:textSize="16sp"
+        android:text="@string/put_into_shopping_cat"
+        android:background="@drawable/bg_login_orange_button"/>
+
+</LinearLayout>

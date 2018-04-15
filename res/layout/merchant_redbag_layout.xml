@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/red_bag_bg_red">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/yuan_symbol"
+            android:textColor="@color/white"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_red_bag_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            tools:text="15"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_get_red_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="领取"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/get_red_bag_button_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/tv_get_red_bag"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_red_bag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="满减"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_red_bag_restrict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            tools:text="满48元可用"
+            android:textColor="@color/white"
+            android:textSize="11dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

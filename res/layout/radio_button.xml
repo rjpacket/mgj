@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RadioButton"
+    android:maxWidth="@dimen/x80"
+    android:minWidth="@dimen/x60"
+    android:minHeight="@dimen/x24"
+    android:background="@drawable/radio_checked"
+    android:textSize="12sp">
+
+</RadioButton>

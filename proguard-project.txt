@@ -1,0 +1,145 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+#百度地图
+-keep class com.baidu.** {*;}
+-keep class vi.com.** {*;}
+-dontwarn com.baidu.**
+#七牛
+-keep class com.qiniu.**{*;}
+-keep class com.qiniu.**{public <init>();}
+-ignorewarnings
+#微信
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+#ping++
+-dontwarn com.alipay.**
+-keep class com.alipay.** {*;}
+-dontwarn  com.ta.utdid2.**
+-keep class com.ta.utdid2.** {*;}
+-dontwarn  com.ut.device.**
+-keep class com.ut.device.** {*;}
+-dontwarn  com.tencent.**
+-keep class com.tencent.** {*;}
+-dontwarn  com.unionpay.**
+-keep class com.unionpay.** {*;}
+-dontwarn com.pingplusplus.**
+-keep class com.pingplusplus.** {*;}
+-dontwarn com.baidu.**
+-keep class com.baidu.** {*;}
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface ;
+}
+#JPush
+-dontoptimize
+-dontpreverify
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+#==================gson==========================
+-dontwarn com.google.**
+-keep class com.google.gson.** {*;}
+#==================protobuf======================
+-dontwarn com.google.**
+-keep class com.google.protobuf.** {*;}
+#友盟统计
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+-keep public class com.project.mgjandroid.R$*{
+public static final int *;
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keepattributes *Annotation*
+
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class com.android.vending.licensing.ILicensingService
+
+-dontwarn android.support.v4.**
+
+-keepnames class * implements java.io.Serializable
+-keep public class * implements java.io.Serializable {
+    public *;
+}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.** { *; }
+
+-dontwarn org.apache.http.entity.mime.**
+-keep class org.apache.http.entity.mime.** { *; }
+
+-dontwarn org.apache.james.mime4j.**
+-keep class org.apache.james.mime4j.** {*;}
+
+-keep class vi.com.gdi.bgl.android.**{ *; }
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context);
+}
+-dontshrink
+-dontwarn android.webkit.WebView
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes SourceFile,LineNumberTable
+
+-keep public class [com.project.mgjandroid].R$*{
+    public static final int *;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.ExtraWithdrawActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <ImageView
+        android:id="@+id/withdraw_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x30"
+        />
+
+    <TextView
+        android:id="@+id/withdraw_tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现申请已提交"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x14"
+        />
+
+    <TextView
+        android:id="@+id/withdraw_tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现金额50元"
+        android:textColor="#666666"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x7"
+        />
+
+    <TextView
+        android:id="@+id/withdraw_tip3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:text="2个工作日内处理，如未提现成功，请联系客服电话：400-997-4000"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x45"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        />
+
+    <TextView
+        android:id="@+id/withdraw_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回我的余额"
+        android:textSize="16sp"
+        android:background="@drawable/bg_login_orange_button"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingTop="@dimen/x13"
+        android:paddingBottom="@dimen/x13"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x60"
+        />
+</LinearLayout>

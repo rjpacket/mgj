@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/commercial_comment_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commercial_comment_item_line"
+        android:orientation="vertical"
+        android:padding="@dimen/x12" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.project.mgjandroid.ui.view.RoundImageView
+                android:id="@+id/commercial_comment_item_header"
+                android:layout_width="@dimen/x22"
+                android:layout_height="@dimen/x22"
+                android:background="@drawable/comment_defaut_head"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop" />
+
+            <RatingBar
+                android:id="@+id/commercial_comment_item_score"
+                style="@style/RatingBar.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:layout_marginTop="@dimen/x10"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/commercial_comment_item_arrive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x4"
+                android:layout_toRightOf="@id/commercial_comment_item_score"
+                android:drawableLeft="@drawable/time_img"
+                android:drawablePadding="@dimen/x4"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_9"
+                android:text="@string/commercial_comment_consume_time"
+                android:layout_alignBottom="@id/commercial_comment_item_score"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/commercial_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commercial_comment_username"
+                android:layout_toLeftOf="@id/commercial_comment_item_header"
+                android:layout_marginLeft="@dimen/x15"
+                android:textSize="14sp"
+                android:textColor="@color/color_3"
+                android:layout_alignBottom="@id/commercial_comment_item_arrive_time"
+                android:layout_marginRight="@dimen/x16"
+                />
+
+            <TextView
+                android:id="@+id/commercial_comment_tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_3"
+                android:layout_below="@id/commercial_comment_item_score"
+                android:text="不错"
+                android:layout_marginTop="@dimen/x6"
+                android:layout_marginBottom="@dimen/x6"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/commercial_comment_tv_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9"
+                android:text="@string/commercial_comment_public_time"
+                android:layout_below="@id/commercial_comment_tv_comment"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_merchant_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:padding="@dimen/x10"
+                android:layout_below="@id/commercial_comment_tv_date_time"
+                android:text="商家回复："
+                android:background="@drawable/bg_gray_radius"
+                android:textColor="@color/color_3"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/commercial_comment_layout_first_leaf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commercial_comment_item_layout_leafs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commercial_comment_item_check_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x6"
+            android:drawableLeft="@drawable/nabla_black"
+            android:drawablePadding="@dimen/x4"
+            android:gravity="center"
+            android:text="@string/commercial_comment_find_more"
+            android:textColor="@color/gray_txt"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

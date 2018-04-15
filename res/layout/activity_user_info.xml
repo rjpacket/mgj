@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/user_info_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/user_info_act_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@drawable/icon_back"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/user_info_act_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/user_info_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/user_info_act_title_bar"
+        android:background="@color/gray_white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x12"
+                android:paddingRight="@dimen/x12">
+                <ImageView
+                    android:id="@+id/user_info_avatar_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <com.project.mgjandroid.ui.view.RoundImageView
+                    android:id="@+id/user_info_act_avatar"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_avatar_arrow"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/userinfo_head_portrait"
+                    imagecontrol:border_inside_color="@color/transparent"
+                    imagecontrol:border_thickness="0dp"
+                    android:layout_marginRight="@dimen/x15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/x16"
+                    android:layout_marginBottom="@dimen/x16"
+                    android:text="@string/user_info_avatar"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/x12">
+
+                <ImageView
+                    android:id="@+id/user_info_username_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/x4"
+                    android:layout_marginTop="@dimen/x4"
+                    android:text="@string/user_info_name"/>
+
+                <TextView
+                    android:id="@+id/user_info_act_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/user_info_username_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:textSize="14sp"
+                    android:textColor="@color/is_bind"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="@dimen/x12"
+                android:paddingRight="@dimen/x12"
+                android:paddingBottom="@dimen/x8"
+                android:paddingTop="@dimen/x8"
+                android:textColor="@color/gray_1"
+                android:text="@string/user_info_acount_bind"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_bind_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/x12"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/accounts_icon_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/userinfo_mobile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/common_gray_text"
+                    android:layout_marginLeft="@dimen/x11"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/accounts_icon_mobile"
+                    android:text="@string/user_info_acount_bind_mobile"/>
+                <ImageView
+                    android:id="@+id/user_info_act_mobile_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/user_info_act_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/is_unopened"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_info_not_binding"
+                    android:layout_toLeftOf="@id/user_info_act_mobile_arrow"
+                    android:layout_marginRight="@dimen/x15"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_bind_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/x12">
+
+                <ImageView
+                    android:id="@+id/accounts_icon_weichat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/userinfo_wechat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/x11"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/accounts_icon_weichat"
+                    android:text="@string/user_info_acount_bind_weixin"/>
+                <ImageView
+                    android:id="@+id/user_info_act_wechat_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/user_info_act_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/is_bind"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_act_wechat_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:text="@string/user_info_not_binding"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_bind_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/x12">
+
+                <ImageView
+                    android:id="@+id/accounts_icon_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/userinfo_qq"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/x11"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/accounts_icon_qq"
+                    android:text="@string/user_info_acount_bind_qq"/>
+                <ImageView
+                    android:id="@+id/user_info_act_qq_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/user_info_act_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/is_bind"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_act_qq_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:text="@string/user_info_not_binding"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_bind_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/x12"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/accounts_icon_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/userinfo_weibo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/common_gray_text"
+                    android:layout_marginLeft="@dimen/x11"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/accounts_icon_weibo"
+                    android:text="@string/user_info_acount_bind_weibo"/>
+                <ImageView
+                    android:id="@+id/user_info_act_weibo_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/user_info_act_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/is_unopened"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_act_weibo_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:text="@string/user_info_not_binding"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="@dimen/x12"
+                android:paddingRight="@dimen/x12"
+                android:paddingBottom="@dimen/x8"
+                android:paddingTop="@dimen/x8"
+                android:textColor="@color/gray_1"
+                android:visibility="gone"
+                android:text="@string/user_info_safety"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:padding="@dimen/x12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/user_info_login_password"
+                    android:layout_marginBottom="@dimen/x4"
+                    android:layout_marginTop="@dimen/x4"/>
+                <ImageView
+                    android:id="@+id/user_info_act_login_password_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/user_info_act_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#28a8e2"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_act_login_password_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:text="@string/user_info_password_not_setting"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_pay_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:padding="@dimen/x12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/user_info_pay_password"
+                    android:layout_marginBottom="@dimen/x4"
+                    android:layout_marginTop="@dimen/x4"/>
+                <ImageView
+                    android:id="@+id/user_info_act_pay_password_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/user_info_act_pay_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#28a8e2"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/user_info_act_pay_password_arrow"
+                    android:layout_marginRight="@dimen/x15"
+                    android:text="@string/user_info_password_not_setting"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/user_info_act_layout_pay_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:padding="@dimen/x15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/user_info_everyday_pay_limit"
+
+                    android:layout_marginBottom="@dimen/x4"
+                    android:layout_marginTop="@dimen/x4"/>
+                <ImageView
+                    android:id="@+id/user_info_act_pay_limit_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userinfo_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/user_info_act_pay_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#b6b6b6"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_toLeftOf="@id/user_info_act_pay_limit_arrow"
+                    android:text="@string/user_info_everyday_pay_limit_msg"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/left_menu_child_item_selector">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x15"
+        android:id="@+id/child_category"
+        >
+        <TextView
+            android:id="@+id/left_menu_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/left_menu_name"
+            android:textColor="#595657"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginLeft="@dimen/x20"/>
+        <View
+            android:layout_below="@id/left_menu_child_name"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>

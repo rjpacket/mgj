@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/list_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:paddingTop="@dimen/x12"
+        android:paddingBottom="@dimen/x8">
+
+        <com.project.mgjandroid.ui.view.CornerImageView
+            android:id="@+id/restaurant_list_item_img"
+            android:layout_width="@dimen/x53"
+            android:layout_height="@dimen/x53"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/x5"
+            app:borderRadius="@dimen/x4"
+            app:type="round"/>
+
+        <ImageView
+            android:id="@+id/restaurant_list_item_img_status"
+            android:layout_width="@dimen/x53"
+            android:layout_height="@dimen/x53"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/x5"
+            android:src="@drawable/pause_business"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/pick_goods_count"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:text="1"
+            android:textSize="8dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@drawable/bg_red_circle"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x40"
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_toRightOf="@id/restaurant_list_item_img"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x4" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/x4"
+                >
+
+                <LinearLayout
+                    android:id="@+id/restaurant_list_item_shipping_fee_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange_text"
+                        android:includeFontPadding="false"
+                        android:textSize="9sp"
+                        android:visibility="visible"
+                        android:text="¥"/>
+
+                    <TextView
+                        android:id="@+id/restaurant_list_item_tv_sendprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="@dimen/x1"
+                        android:textColor="@color/orange_text"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:includeFontPadding="false"
+                        android:text="@string/commercial_comment_mix_delivery"
+                        android:textColor="@color/color_6"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/restaurant_list_item_shipping_fee_layout"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <RatingBar
+                    android:id="@+id/restaurant_list_item_rat_score"
+                    style="@style/RatingBar.ShopGoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    />
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_toRightOf="@id/restaurant_list_item_rat_score"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:textColor="@color/orange_text"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_insales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="@dimen/x6"
+                    android:layout_toRightOf="@id/restaurant_list_item_tv_score"
+                    android:textColor="@color/color_6"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/restaurant_list_item_tv_shipping_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:paddingRight="@dimen/x1"
+                        android:textColor="@color/orange_text"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/restaurant_list_item_tv_mian_shipping_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/free"
+                        android:textColor="@color/gray_text_3"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/delivery_price"
+                        android:textColor="@color/color_6"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/x6" >
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerVertical="true"
+                    android:background="@color/green_light"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_time_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x1"
+                    android:textColor="@color/color_6"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/restaurant_list_item_layout_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/promotion_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/gray_bg_2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/x4"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/restaurant_list_item_layout_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/restaurant_list_item_layout_active_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/restaurant_list_item_layout_active"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/restaurant_list_item_iv_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/nabla_black"
+                    android:paddingTop="@dimen/x5"
+                    android:paddingBottom="@dimen/x5"/>
+
+                <TextView
+                    android:id="@+id/restaurant_list_item_tv_active_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_toLeftOf="@id/restaurant_list_item_iv_active"
+                    android:layout_marginRight="@dimen/x6"
+                    android:paddingTop="@dimen/x2"
+                    android:paddingBottom="@dimen/x10"
+                    android:textColor="@color/gray_text_3"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/list_item_rl"
+        android:layout_marginBottom="1px"
+        android:background="@color/gray_bg_2" />
+
+</RelativeLayout>

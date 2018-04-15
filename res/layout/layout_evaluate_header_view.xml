@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x15"
+        >
+
+        <ImageView
+            android:id="@+id/evaluate_icon"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
+            android:src="@drawable/pay_icon_wechat"
+            />
+
+        <TextView
+            android:id="@+id/evaluate_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toRightOf="@id/evaluate_icon"
+            android:text="@string/merchants_name"
+            android:textColor="@color/common_black_text"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/x15"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            >
+
+            <TextView
+                android:id="@+id/all_evaluate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/item_evaluate_list_overall_evaluate"
+                android:textColor="@color/common_black_text"
+                />
+
+            <com.project.mgjandroid.ui.view.RatingBarView
+                android:id="@+id/all_rat_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/all_evaluate_text"
+                bao:starImageSize = "22dp"
+                bao:starCount = "5"
+                bao:starEmpty = "@drawable/evaluate_all_uncheck"
+                bao:starFill = "@drawable/evaluate_all"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_gray_line"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/all_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@drawable/shap_gray_strole_white_bg"
+            android:gravity="top"
+            android:lines="2"
+            android:maxLines="2"
+            android:padding="@dimen/x8"
+            android:hint="@string/item_evaluate_list_overall_evaluate"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/driver_evaluate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            >
+
+            <TextView
+                android:id="@+id/driver_evaluate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/item_evaluate_list_driver_comment"
+                android:textColor="@color/common_black_text"
+                />
+
+            <com.project.mgjandroid.ui.view.RatingBarView
+                android:id="@+id/driver_rat_score"
+                style="@style/RatingBar.EvaluateDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/driver_evaluate_text"
+                bao:starImageSize = "22dp"
+                bao:starCount = "5"
+                bao:starEmpty = "@drawable/evaluate_all_uncheck"
+                bao:starFill = "@drawable/evaluate_all"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_gray_line"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/driver_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@drawable/shap_gray_strole_white_bg"
+            android:gravity="top"
+            android:lines="2"
+            android:maxLines="2"
+            android:padding="@dimen/x8"
+            android:hint="@string/item_evaluate_list_driver_comment"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            >
+
+            <TextView
+                android:id="@+id/time_evaluate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/confirm_order_arrival_time"
+                android:textColor="@color/common_black_text"
+                />
+
+            <TextView
+                android:id="@+id/time_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/time_evaluate_text"
+                android:text="@string/please_select"
+                android:textColor="@color/blue_dark"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_gray_line"
+                />
+        </RelativeLayout>
+
+        <com.project.mgjandroid.ui.view.WheelView
+            android:id="@+id/wheel_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:descendantFocusability="beforeDescendants"
+            >
+
+        </com.project.mgjandroid.ui.view.WheelView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/evaluate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/evaluate"
+            android:textColor="@color/common_black_text"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_gray_line"
+            />
+    </RelativeLayout>
+</LinearLayout>

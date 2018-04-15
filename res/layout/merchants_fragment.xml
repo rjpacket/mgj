@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/merchants_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_1"
+                    android:textSize="18sp"
+                    android:text="@string/commercial_name"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_marginTop="@dimen/x14"
+                    />
+
+                <RatingBar
+                    android:id="@+id/merchants_fragment_score"
+                    style="@style/RatingBar.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:layout_below="@id/merchants_fragment_tv_name"
+                    android:stepSize="0.1"
+                    android:layout_marginTop="@dimen/x5"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_marginBottom="@dimen/x14"
+                />
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_score_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp"
+                    android:text="(2558)"
+                    android:layout_toRightOf="@id/merchants_fragment_score"
+                    android:layout_below="@id/merchants_fragment_tv_name"
+                    android:layout_marginTop="@dimen/x5"
+                    />
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_sale_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="12sp"
+                    android:text="月售2557单"
+                    android:layout_toRightOf="@id/merchants_fragment_tv_score_num"
+                    android:layout_below="@id/merchants_fragment_tv_name"
+                    android:layout_marginTop="@dimen/x5"
+                    />
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/x6"
+                    android:drawableTop="@drawable/bg_save"
+                    android:gravity="center_horizontal"
+                    android:text="@string/collect"
+                    android:textColor="@color/gray_1"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/x24"
+                    android:layout_alignBaseline="@id/merchants_fragment_tv_sale_num"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x10"
+                    android:paddingBottom="@dimen/x10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/commercial_qisong_price"
+                        android:textColor="@color/common_gray_text"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/merchant_qisong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/org_light"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yuan"
+                            android:textColor="@color/org_light"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_gray_line"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/x10"
+                    android:paddingBottom="@dimen/x10"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/merchant_shipment_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_by_merchant"
+                        android:textColor="@color/common_gray_text"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/merchant_peisong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/org_light"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yuan"
+                            android:textColor="@color/org_light"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_gray_line"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x10"
+                    android:paddingBottom="@dimen/x10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_avg_time"
+                        android:textColor="@color/common_gray_text"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/mine_fragment_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/org_light"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/minute"
+                            android:textColor="@color/org_light"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/merchants_fragment_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="商家信息"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x1"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:textColor="@color/black_2"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/merchants_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/location"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:layout_marginLeft="@dimen/x10"
+                        />
+
+                    <TextView
+                        android:id="@+id/merchants_fragment_tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x1"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/x10"
+                        android:paddingLeft="@dimen/x24"
+                        android:paddingRight="0dp"
+                        android:paddingTop="@dimen/x10"
+                        android:textColor="@color/black_2"
+                        android:layout_toLeftOf="@id/location_icon"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x1"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:textColor="@color/black_2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x1"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:textColor="@color/black_2"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/merchants_fragment_notice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="商家公告"
+                    android:textColor="@color/common_gray_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/merchant_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="你好啊你好啊"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_marginRight="@dimen/x24"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:textColor="@color/orange_ff"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/merchants_fragment_actives_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="活动与支持"
+                    android:textColor="@color/common_gray_text"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/merchants_fragment_active_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="活动与支持"
+                    android:textColor="@color/gray_3"
+                    android:visibility="gone"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/merchants_fragment_introduct_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="商家简介"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/merchants_fragment_tv_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x1"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="0dp"
+                    android:paddingTop="@dimen/x10"
+                    android:text="我们努力做更好的品质外卖"
+                    android:textColor="@color/black_2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

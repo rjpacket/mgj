@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginRight="@dimen/x15"
+        android:paddingTop="@dimen/x16"
+        android:paddingBottom="@dimen/x10"
+        android:background="@drawable/bg_white_shape_stroke">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x13"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18sp"
+                android:textColor="@color/color_3"
+                android:includeFontPadding="false"
+                tools:text="挖掘机司机"/>
+
+            <TextView
+                android:id="@+id/tv_sticky_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/red_job"
+                android:includeFontPadding="false"
+                tools:text="已置顶"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x13"
+            android:textColor="@color/color_9"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/x10"
+            tools:text="发布时间：2016-06-20 18:00"/>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x13"
+            android:textColor="@color/color_9"
+            android:layout_marginTop="@dimen/x8"
+            android:includeFontPadding="false"
+            tools:text="类别：司机"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/mine_divide_grey"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginBottom="@dimen/x12"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/recruit_info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位描述："
+                    android:layout_marginLeft="@dimen/x10"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_3"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x13"
+                    android:textSize="13sp"
+                    android:layout_marginTop="@dimen/x10"
+                    android:textColor="@color/color_6"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="1.2"
+                    tools:text="数据来源于发布者发布信息时填写的职位描述，内容展示为两行，点击职位描述如图的蓝框区域，进入招聘信息详情页。"/>
+            </LinearLayout>
+
+        </ScrollView>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginBottom="@dimen/x25"
+        android:background="@drawable/bg_login_orange_button"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="联系电话"
+        android:gravity="center"/>
+
+</LinearLayout>

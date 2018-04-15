@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:id="@+id/search_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="无"
+            android:layout_marginTop="@dimen/x15"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x12"
+            />
+
+        <TextView
+            android:id="@+id/search_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="无"
+            android:textSize="11sp"
+            android:layout_below="@id/search_name"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginBottom="@dimen/x15"
+            android:textColor="@color/gray_text_3"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="无"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x12"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/x8"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/common_gray_line"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/home_fragment_menu_right_shipment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x12"
+                android:paddingTop="@dimen/x15"
+                android:paddingRight="@dimen/x12"
+                android:paddingBottom="@dimen/x15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_1"
+                    android:text="@string/delivery_method"/>
+
+                <com.project.mgjandroid.ui.view.SegmentedGroup
+                    android:id="@+id/home_fragment_menu_right_segment_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    segmentedgroup:border_width="1px"
+                    segmentedgroup:checked_text_color="@color/white"
+                    segmentedgroup:corner_radius="@dimen/x10"
+                    segmentedgroup:tint_color="@color/white"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg"/>
+
+            <LinearLayout
+                android:id="@+id/home_fragment_menu_right_merchant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x12"
+                    android:paddingTop="@dimen/x15"
+                    android:paddingRight="@dimen/x12"
+                    android:paddingBottom="@dimen/x15"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_1"
+                    android:background="@color/gray_bg"
+                    android:visibility="gone"
+                    android:text="@string/merchants_character"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:background="@color/gray_bg"/>
+
+                <com.project.mgjandroid.ui.view.FlowLayout
+                    android:id="@+id/home_fragment_menu_right_merchant_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x15"
+                    android:paddingTop="@dimen/x5"
+                    android:visibility="gone"
+                    android:paddingRight="@dimen/x7"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:background="@color/gray_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_fragment_menu_right_promotion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x12"
+                    android:paddingTop="@dimen/x15"
+                    android:paddingRight="@dimen/x12"
+                    android:paddingBottom="@dimen/x15"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_1"
+                    android:background="@color/gray_bg"
+                    android:visibility="gone"
+                    android:text="@string/preferential_doing"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:background="@color/gray_bg"/>
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_menu_right_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:fadingEdge="none"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x5"
+        android:paddingBottom="@dimen/x5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_fragment_menu_right_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x15"
+            android:paddingTop="@dimen/x5"
+            android:paddingBottom="@dimen/x5"
+            android:gravity="center"
+            android:textColor="@color/gray_txt"
+            android:textSize="16sp"
+            android:text="清空筛选"
+            android:background="@drawable/white_and_gray_button_selector"
+            />
+
+        <TextView
+            android:id="@+id/home_fragment_menu_right_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:paddingTop="@dimen/x5"
+            android:paddingBottom="@dimen/x5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="确定"
+            android:background="@drawable/bg_login_orange_button"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:background="@color/white"/>
+
+    <View
+        android:id="@+id/home_fragment_menu_right_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/popup_main_background"/>
+
+</LinearLayout>

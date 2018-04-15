@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notice_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/notice_act_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@drawable/icon_back"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/notice_act_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/notice_center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_text_size" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+            android:id="@+id/notice_act_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbVertical="@drawable/xg_scrollbar" />
+        <LinearLayout
+            android:id="@+id/notice_act_no_net"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/notice_act_title_bar"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x90"
+                android:src="@drawable/has_no_net"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_abnormal"
+                android:textSize="14sp"
+                android:textColor="#ada9a6"
+                android:layout_margin="@dimen/x18"/>
+            <TextView
+                android:id="@+id/notice_act_reload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x98"
+                android:layout_marginRight="@dimen/x98"
+                android:gravity="center"
+                android:padding="@dimen/x12"
+                android:background="@drawable/shap_corner_red_bg"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/x40"
+                android:textColor="@color/white"
+                android:text="@string/reload"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice_act_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有通知消息" />
+    </RelativeLayout>
+
+</LinearLayout>

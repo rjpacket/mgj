@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white" >
+
+    <RelativeLayout
+        android:id="@+id/set_address_act_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10" >
+
+        <TextView
+            android:id="@+id/set_address_act_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/set_address_act_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/set_address_act_tv_cancel"
+            android:layout_toRightOf="@id/set_address_act_iv_back"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/set_address_act_edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/address_poi"
+                    android:paddingBottom="@dimen/x4"
+                    android:paddingTop="@dimen/x4"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/set_address_act_iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/abc_ic_clear_mtrl_alpha"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/set_address_act_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_address_act_title_bar"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/set_address_act_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent" />
+
+
+        <TextView
+            android:id="@+id/set_address_act_tv_search_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_fail"
+            android:textColor="@color/gray_2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/x80"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/set_address_act_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_address_act_title_bar"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x224"
+            >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/set_address_act_map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/set_address_act_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:src="@drawable/icon_locating"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="50px"
+                android:src="@drawable/icon_pointer"/>
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/set_address_act_map_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

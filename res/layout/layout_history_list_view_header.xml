@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/gray_white"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/hot_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/hot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x15"
+            />
+
+        <com.project.mgjandroid.ui.view.FlowLayout
+            android:id="@+id/hot_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/hot_title"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/x10"
+            android:paddingRight="@dimen/x12"
+            >
+
+        </com.project.mgjandroid.ui.view.FlowLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/history_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginTop="@dimen/x28"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"
+            android:layout_marginTop="@dimen/x15"
+            />
+    </LinearLayout>
+</LinearLayout>

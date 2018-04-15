@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.project.mgjandroid.ui.fragment.MyCommunityFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+        android:id="@+id/my_community_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        >
+
+    </com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView>
+
+</FrameLayout>

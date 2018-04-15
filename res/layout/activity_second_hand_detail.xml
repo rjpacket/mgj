@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.project.mgjandroid.ui.activity.SecondHandDetailActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/top_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x280"
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/second_hand_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/second_hand_page_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/0"
+                    android:padding="@dimen/x8"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/bg_gray_shape"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/x20"
+                >
+
+                <TextView
+                    android:id="@+id/second_hand_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签"
+                    android:textSize="12sp"
+                    android:textColor="#ff9900"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x14"
+                    android:background="@drawable/shap_org_range_bg"
+                    android:layout_marginTop="@dimen/x15"
+                    />
+
+                <TextView
+                    android:id="@+id/second_hand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginTop="@dimen/x21"
+                    android:layout_alignBaseline="@id/second_hand_tag"
+                    android:textColor="@color/color_3"
+                    android:layout_toLeftOf="@id/second_hand_tag"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/second_hand_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="24sp"
+                    android:textColor="#fb4b18"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_below="@id/second_hand_name"
+                    android:layout_marginTop="@dimen/x13"
+                    />
+
+                <TextView
+                    android:id="@+id/second_hand_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间："
+                    android:textSize="12sp"
+                    android:textColor="@color/color_9"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_below="@id/second_hand_price"
+                    android:layout_marginTop="@dimen/x13"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/gray_white"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细信息"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginTop="@dimen/x20"
+                    android:textColor="@color/color_9"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/second_hand_jubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_9"
+                    android:text="举报"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginRight="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/second_hand_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x6"
+                    android:layout_below="@id/second_hand_jubao"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginRight="@dimen/x14"
+                    android:textColor="@color/color_3"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/second_hand_detail_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x43"
+        android:text="联系方式"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_login_orange_button"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:gravity="center"
+        />
+
+</LinearLayout>

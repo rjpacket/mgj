@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:padding="@dimen/x10"
+              android:gravity="center_vertical"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/promotion_icon"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:layout_marginLeft="@dimen/x14"
+            />
+
+        <TextView
+            android:id="@+id/promotion_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user"
+            android:textSize="13sp"
+            android:layout_marginLeft="@dimen/x7"
+            android:textColor="@color/common_black_text"
+            />
+
+        <ImageView
+            android:id="@+id/right_menu_item_iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/bg_filter_right_or_none"
+            android:visibility="visible"/>
+</LinearLayout>

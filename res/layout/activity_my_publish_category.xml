@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.MyPublishCategoryActivity"
+    >
+    <include
+        layout="@layout/actionbar" />
+
+    <GridView
+        android:id="@+id/my_publish_category_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:listSelector="@null"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/bg_white_shape_stroke"/>
+</LinearLayout>

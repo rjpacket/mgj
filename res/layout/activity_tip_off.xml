@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x5"
+        android:background="@drawable/bg_mine_stroke_grey"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="举报该信息涉嫌："
+            android:textColor="@color/color_3"
+            android:textSize="15sp"
+            android:padding="@dimen/x15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/gray_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/report_act_tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="垃圾营销"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    />
+
+                <TextView
+                    android:id="@+id/report_act_tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有害信息"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_marginTop="@dimen/x30"
+                    />
+
+                <TextView
+                    android:id="@+id/report_act_tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="淫秽色情"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_marginTop="@dimen/x30"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/report_act_tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不实信息"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    />
+
+                <TextView
+                    android:id="@+id/report_act_tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="违法信息"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_marginTop="@dimen/x30"
+                    />
+
+                <TextView
+                    android:id="@+id/report_act_tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人身攻击"
+                    android:textColor="@color/color_3"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/bg_report_check"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_marginTop="@dimen/x30"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="举报"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@drawable/bg_login_orange_button"/>
+
+</LinearLayout>

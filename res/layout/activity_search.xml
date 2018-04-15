@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.project.mgjandroid.ui.activity.SearchActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/login_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/login_register"
+            android:layout_toRightOf="@id/login_back"
+            android:layout_marginLeft="@dimen/x32"
+            android:layout_marginRight="@dimen/x2"
+            android:background="@drawable/dialog_bg_white"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_marginBottom="@dimen/x8"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sousuoicon"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/x7"
+                />
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="请输入商家名称"
+                android:background="@null"
+                android:textSize="@dimen/mine_list_text_size"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:id="@+id/history_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            >
+
+        </ListView>
+
+        <com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView
+            android:id="@+id/search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            >
+        </com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView>
+
+        <LinearLayout
+            android:id="@+id/home_fragment_no_net"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/home_fragment_img_nonet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x90"
+                android:src="@drawable/has_no_net"/>
+            <TextView
+                android:id="@+id/home_fragment_msg_nonet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_abnormal"
+                android:textSize="14sp"
+                android:textColor="#ada9a6"
+                android:layout_margin="@dimen/x18"/>
+            <TextView
+                android:id="@+id/home_fragment_reload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x98"
+                android:layout_marginRight="@dimen/x98"
+                android:gravity="center"
+                android:padding="@dimen/x12"
+                android:background="@drawable/shap_corner_red_bg"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/x40"
+                android:textColor="@color/white"
+                android:text="@string/reload"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

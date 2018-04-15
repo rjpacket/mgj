@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/area_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/white"
+        android:text="湖南省"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x15"
+        android:textColor="@color/color_3"
+        />
+</LinearLayout>

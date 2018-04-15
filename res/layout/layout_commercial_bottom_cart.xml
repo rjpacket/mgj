@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#00999999"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_center"
+        android:layout_width="match_parent"
+        android:padding="@dimen/x10"
+        android:background="#ebecee"
+        android:layout_height="@dimen/x42"
+        >
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/x3"
+            android:layout_height="match_parent"
+            android:background="#2f92e6"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_cat"
+            android:textColor="#868887"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/view"
+            android:layout_marginLeft="@dimen/x10"
+            />
+
+        <TextView
+            android:id="@+id/tv_clear_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all"
+            android:textColor="#868887"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/commercial_cart_list_view"
+        android:layout_width="match_parent"
+        android:divider="@color/common_gray_line"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
