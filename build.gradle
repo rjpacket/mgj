@@ -44,6 +44,7 @@ android {
     defaultConfig {
         applicationId = "com.project.mgjandroid"
     }
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.project.mgjandroid"
@@ -173,7 +174,7 @@ android {
 }
 
 def buildTime() {
-    return new Date().format("yyyy-MM-dd_HH-mm-ss")
+    return new Date().format("yyyy-MM-dd")
 }
 
 /**
