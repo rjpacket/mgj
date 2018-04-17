@@ -22,7 +22,7 @@ task clean(type: Delete) {
 }
 
 ext.appVersionCode = 8
-ext.appVersionName = "2.4.0"
+ext.appVersionName = "1.0.0"
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
@@ -147,6 +147,11 @@ android {
             java.srcDirs = ['source/horsegj/src']
         }
 
+        kdelivery {
+            res.srcDirs = ['source/kdelivery/res']
+            java.srcDirs = ['source/kdelivery/src']
+        }
+
         // Move the tests to tests/java, tests/res, etc...
         instrumentTest.setRoot('tests')
 
@@ -161,6 +166,10 @@ android {
     }
 
     productFlavors {
+        kdelivery {
+            applicationId "com.zywl.kdelivery"
+            manifestPlaceholders = [APP_ID: "com.zywl.kdelivery"]
+        }
         qyue {
             applicationId "com.project.mgjandroid"
             manifestPlaceholders = [APP_ID: "com.project.mgjandroid"]
