@@ -11,7 +11,8 @@
     <string name="app_nick">qdeliveryUser</string>
     <string name="sale_phone">400-8778736</string>
     <string name="online_pay_contact_service">订单如需退款，请联系客服：400-8778736</string>
-    <string name="app_scheme">qdelivery</string>
+    <string name="app_scheme">horsegj</string>
     <string name="to_home_page">进入快捷送</string>
+    <string name="about_mgj">关于快捷送</string>
 
 </resources>
