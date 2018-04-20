@@ -57,10 +57,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("maguanjia.jks")
-            storePassword 'maguanjia'
-            keyAlias 'maguanjia'
-            keyPassword 'maguanjia'
+            storeFile file('zywl.jks')
+            keyAlias '众盈彩票'
+            keyPassword '123456'
+            storePassword '123456'
         }
     }
     buildTypes {

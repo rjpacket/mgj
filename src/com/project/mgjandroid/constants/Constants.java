@@ -12,12 +12,12 @@ import java.io.File;
 public class Constants {
     public static final String WE_CHAT_APP_ID = App.getInstance().getString(R.string.wechat_appid);
 
-    public static final String URL_HOME_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/merchant/userClient?m="; //120.24.16.64正式123.56.15.86
-    public static final String URL_SECOND_HAND_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/secondhand/userClient?m="; //120.24.16.64正式123.56.15.86
-    public static final String URL_RENT_HOUSE_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/houselease/userClient?m="; //120.24.16.64正式123.56.15.86
-    public static final String URL_EDUCATION_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/education/userClient?m="; //120.24.16.64正式123.56.15.86
-    public static final String URL_HOME_MAKING_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/homemaking/userClient?m="; //120.24.16.64正式123.56.15.86
-    public static final String URL_REPAIR_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "http://test.dajiang365.com" : "123.56.15.86") + "/repair/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_HOME_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/merchant/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_SECOND_HAND_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/secondhand/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_RENT_HOUSE_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/houselease/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_EDUCATION_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/education/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_HOME_MAKING_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/homemaking/userClient?m="; //120.24.16.64正式123.56.15.86
+    public static final String URL_REPAIR_MAIN = "http://" + (BuildConfig.IS_DEBUG ? "test.dajiang365.com" : "123.56.15.86") + "/repair/userClient?m="; //120.24.16.64正式123.56.15.86
     public static final String URL_BBS_MAIN = BuildConfig.IS_DEBUG ? "http://120.24.16.64/bbs/userClient?m=" : "http://123.56.15.86/bbs/userClient?m=";
     //	public static final String URL_HOME_MAIN = "http://" + "192.168.199.212:8080" + "/merchant/userClient?m="; //120.24.16.64正式123.56.15.86
     public static final String URL_IMAGE_FRONT = "http://7xpvkm.com1.z0.glb.clouddn.com/";
