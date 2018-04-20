@@ -108,7 +108,8 @@ android {
                 } else {
                     output.outputFile = new File(
                             output.outputFile.parent,
-                            ("mgjclient-${variant.name}-${variant.versionName}-" + buildTime() + ".apk").toLowerCase())
+                            ("mgjclient-${variant.name}-${variant.versionName}" + ".apk").toLowerCase())
+//                            ("mgjclient-${variant.name}-${variant.versionName}-" + buildTime() + ".apk").toLowerCase())
                 }
                 if (output.zipAlign != null) {
                     output.zipAlign.doLast {
