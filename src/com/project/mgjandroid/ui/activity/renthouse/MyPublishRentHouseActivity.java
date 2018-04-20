@@ -32,6 +32,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 房屋租赁
+ */
 public class MyPublishRentHouseActivity extends BaseActivity implements PullToRefreshBase.OnRefreshListener2, AdapterView.OnItemClickListener, CustomDialog.onBtnClickListener {
     @InjectView(R.id.common_back)
     private ImageView ivBack;

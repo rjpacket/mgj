@@ -5,7 +5,6 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
 import com.project.mgjandroid.R;
 import com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshBase;
@@ -25,18 +24,18 @@ public class HorseLoadingLayout extends LoadingLayout {
         super(context, mode, scrollDirection, attrs);
 
         //初始化
-        mFirstImage.setImageResource(R.drawable.bg_header_view);
-        mFirstAnim = AnimationUtils.loadAnimation(context, R.anim.from_0_to_100);
-        mFirstImage.setAnimation(mFirstAnim);
-        mSecondImage.setImageResource(R.drawable.bg_header_view);
-        mSecondAnim = AnimationUtils.loadAnimation(context, R.anim.from_100_to_0);
-        mSecondImage.setAnimation(mSecondAnim);
+//        mFirstImage.setImageResource(R.drawable.bg_header_view);
+//        mFirstAnim = AnimationUtils.loadAnimation(context, R.anim.from_0_to_100);
+//        mFirstImage.setAnimation(mFirstAnim);
+//        mSecondImage.setImageResource(R.drawable.bg_header_view);
+//        mSecondAnim = AnimationUtils.loadAnimation(context, R.anim.from_100_to_0);
+//        mSecondImage.setAnimation(mSecondAnim);
         mHorseImage.setImageResource(R.drawable.horse_anim);
     }
 
     public void startAnim(){
-        mFirstAnim.start();
-        mSecondAnim.start();
+//        mFirstAnim.start();
+//        mSecondAnim.start();
         mHorseAnim = (AnimationDrawable) mHorseImage.getDrawable();
         mHorseAnim.start();
     }
