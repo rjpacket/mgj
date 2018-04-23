@@ -39,7 +39,6 @@ import com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshBase;
 import com.project.mgjandroid.ui.view.newpulltorefresh.PullToRefreshListView;
 import com.project.mgjandroid.utils.AnimatorUtils;
 import com.project.mgjandroid.utils.CheckUtils;
-import com.project.mgjandroid.utils.CommonUtils;
 import com.project.mgjandroid.utils.CustomDialog;
 import com.project.mgjandroid.utils.PreferenceUtils;
 import com.project.mgjandroid.utils.ToastUtils;
@@ -123,6 +122,9 @@ public class OrderListFragment extends BaseFragment implements OnClickListener, 
     }
 
     private void checkState() {
+        if(orderListStateAbnormal == null){
+            return;
+        }
         orderListStateAbnormal.setVisibility(View.GONE);
         if(!App.isLogin()){//未登录
             state=ORDER_FRAGMRNT_NO_LOGIN;
