@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -619,7 +620,8 @@ public class ConfirmOrderActivity extends BaseActivity implements View.OnClickLi
                     ToastUtils.displayMsg("请选择支付方式",mActivity);
                     break;
                 }
-                submitOrder();
+//                submitOrder();
+                Toast.makeText(mActivity, "商家已休息", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.confirm_order_select_time:
                 if(!TextUtils.isEmpty(errorMsg)){

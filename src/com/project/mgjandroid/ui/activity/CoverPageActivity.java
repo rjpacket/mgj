@@ -79,7 +79,8 @@ public class CoverPageActivity extends BaseActivity {
 			public void run() {
 				Intent intent = new Intent();
 				if (PreferenceUtils.getVersionCode(CoverPageActivity.this) < CommonUtils.getCurrentVersionCode()) {
-					intent.setClass(CoverPageActivity.this, GuideActivity.class);
+//					intent.setClass(CoverPageActivity.this, GuideActivity.class);
+					intent.setClass(CoverPageActivity.this, HomeActivity.class);
 				} else {
 					intent.setClass(CoverPageActivity.this, HomeActivity.class);
 				}

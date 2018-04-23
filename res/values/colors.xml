@@ -3,7 +3,7 @@
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <item type="color" name="abc_search_url_text_selected">@*android:color/black</item>
     <item type="color" name="abc_search_url_text_pressed">@*android:color/black</item>
-    <color name="title_bar_bg">#00aeff</color>
+    <color name="title_bar_bg">#FF5959</color>
     <color name="gray_bg">#fff3f3f3</color>
     <color name="gray_bg_2">#fff3f3f3</color>
     <color name="gray_txt">#ffaaaaaa</color>

@@ -23,10 +23,10 @@
 
             <ImageView
                 android:id="@+id/home_act_img_home"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/x22"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/icon_home_selected" />
+                android:src="@drawable/shouye" />
 
             <TextView
                 android:id="@+id/home_act_tv_home"
@@ -49,10 +49,10 @@
 
             <ImageView
                 android:id="@+id/home_act_img_order"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/x22"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/icon_list" />
+                android:src="@drawable/dingdan_wx" />
 
             <TextView
                 android:id="@+id/home_act_tv_order"
@@ -102,10 +102,10 @@
 
             <ImageView
                 android:id="@+id/home_act_img_mine"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/x22"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/icon_my" />
+                android:src="@drawable/wode_wx" />
 
             <TextView
                 android:id="@+id/home_act_tv_mine"

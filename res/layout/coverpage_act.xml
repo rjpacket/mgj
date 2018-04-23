@@ -84,53 +84,11 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/orange_home"
-        android:visibility="visible"
-        android:orientation="vertical" >
-
-
-        <ImageView
-            android:layout_width="@dimen/x154"
-            android:layout_height="@dimen/x220"
-            android:focusable="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/x100"
-            android:src="@drawable/cover_page_03" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/coverpage_first_title"
-            android:textColor="@color/white"
-            android:visibility="gone"
-            android:textSize="23.0sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/x13"
-            android:text="微信群 多人订餐"
-            android:textColor="@color/white"
-            android:visibility="gone"
-            android:textSize="14.0sp" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
-
-        <ImageView
-            android:layout_width="@dimen/x110"
-            android:layout_height="@dimen/x54"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/cover_page_04"
-            android:layout_marginBottom="@dimen/x60"
-            />
-
-    </LinearLayout>
+        android:src="@drawable/wellcome_page"
+        android:scaleType="centerCrop"
+        />
 
 </RelativeLayout>

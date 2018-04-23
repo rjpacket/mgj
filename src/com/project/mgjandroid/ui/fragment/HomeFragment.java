@@ -853,8 +853,8 @@ public class HomeFragment extends BaseFragment implements OnClickListener, OnBan
         public void onReceiveLocation(BDLocation location) {
             LocationManager.getIManager().stopLocation();
             if (location != null) {
-                PreferenceUtils.saveLocation(location.getLatitude() + "", location.getLongitude() + "", mActivity);
-                PreferenceUtils.saveAddressName(location.getAddrStr(), mActivity);
+                PreferenceUtils.saveLocation("27.732586335325262", "111.33394571947478", mActivity);
+                PreferenceUtils.saveAddressName("江西省娄底市新化县", mActivity);
                 if (CheckUtils.isNoEmptyList(location.getPoiList())) {
                     List<Poi> list = location.getPoiList();
                     PreferenceUtils.saveAddressDes(list.get(0).getName(), mActivity);

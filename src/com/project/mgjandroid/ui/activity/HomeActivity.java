@@ -177,23 +177,23 @@ public class HomeActivity extends BaseActivity implements OnClickListener, OnPag
     private void changeTabUi(int index) {
         switch (index) {
             case INDEX_HOME:
-                homeImg.setImageResource(R.drawable.icon_home_selected);
+                homeImg.setImageResource(R.drawable.shouye);
                 homeTv.setTextColor(getResources().getColor(R.color.title_bar_bg));
-                orderImg.setImageResource(R.drawable.icon_list);
+                orderImg.setImageResource(R.drawable.dingdan_wx);
                 orderTv.setTextColor(getResources().getColor(R.color.gray_txt));
                 communityImg.setImageResource(R.drawable.community_unselected);
                 communityTv.setTextColor(getResources().getColor(R.color.gray_txt));
-                mineImg.setImageResource(R.drawable.icon_my);
+                mineImg.setImageResource(R.drawable.wode_wx);
                 mineTv.setTextColor(getResources().getColor(R.color.gray_txt));
                 break;
             case INDEX_ORDER:
-                homeImg.setImageResource(R.drawable.icon_home);
+                homeImg.setImageResource(R.drawable.shouye_wx);
                 homeTv.setTextColor(getResources().getColor(R.color.gray_txt));
-                orderImg.setImageResource(R.drawable.icon_list_selected);
+                orderImg.setImageResource(R.drawable.dingdan);
                 orderTv.setTextColor(getResources().getColor(R.color.title_bar_bg));
                 communityImg.setImageResource(R.drawable.community_unselected);
                 communityTv.setTextColor(getResources().getColor(R.color.gray_txt));
-                mineImg.setImageResource(R.drawable.icon_my);
+                mineImg.setImageResource(R.drawable.wode_wx);
                 mineTv.setTextColor(getResources().getColor(R.color.gray_txt));
                 orderListFragment.refreshList();
                 break;
@@ -208,13 +208,13 @@ public class HomeActivity extends BaseActivity implements OnClickListener, OnPag
 //                mineTv.setTextColor(getResources().getColor(R.color.gray_txt));
 //                break;
             case INDEX_MINE:
-                homeImg.setImageResource(R.drawable.icon_home);
+                homeImg.setImageResource(R.drawable.shouye_wx);
                 homeTv.setTextColor(getResources().getColor(R.color.gray_txt));
-                orderImg.setImageResource(R.drawable.icon_list);
+                orderImg.setImageResource(R.drawable.dingdan_wx);
                 orderTv.setTextColor(getResources().getColor(R.color.gray_txt));
                 communityImg.setImageResource(R.drawable.community_unselected);
                 communityTv.setTextColor(getResources().getColor(R.color.gray_txt));
-                mineImg.setImageResource(R.drawable.icon_my_selected);
+                mineImg.setImageResource(R.drawable.wode);
                 mineTv.setTextColor(getResources().getColor(R.color.title_bar_bg));
                 mineFragment.refreshPage();
                 break;
