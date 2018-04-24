@@ -133,6 +133,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:visibility="gone"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -209,6 +210,7 @@
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_above="@id/login_by_third_party"
+        android:visibility="gone"
         android:background="@color/color_d2"
         android:layout_marginBottom="@dimen/x10"/>
     <TextView
@@ -217,6 +219,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login_by_third"
         android:layout_centerHorizontal="true"
+        android:visibility="gone"
         android:paddingTop="@dimen/x10"
         android:paddingLeft="@dimen/x10"
         android:paddingRight="@dimen/x10"

@@ -141,6 +141,7 @@
                 android:paddingLeft="@dimen/x12"
                 android:paddingRight="@dimen/x12"
                 android:paddingBottom="@dimen/x8"
+                android:visibility="gone"
                 android:paddingTop="@dimen/x8"
                 android:textColor="@color/gray_1"
                 android:text="@string/user_info_acount_bind"/>
@@ -207,6 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:visibility="gone"
                 android:padding="@dimen/x12">
 
                 <ImageView
@@ -257,6 +259,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:visibility="gone"
                 android:padding="@dimen/x12">
 
                 <ImageView
